@@ -8,7 +8,7 @@
     "build-all": "npm run build && npm run styleguide:build",
     "build-css": "node-sass-chokidar --include-path ./src src/ -o src/",
     "build-js": "node scripts/build.js",
-    "deploy": "git subtree push --prefix styleguide origin gh-pages --force && git checkout master",
+    "deploy": "git subtree push --prefix styleguide origin gh-pages",
     "minor-release": "npm version minor && npm publish && git push --tags",
     "patch-release": "npm version patch && npm publish && git push --tags",
     "start": "npm-run-all -p watch-css start-js",

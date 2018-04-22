@@ -20,7 +20,8 @@ ReactDOM.render(
 );
 ```
 
-See the [Style Guide](https://www.google.com) for detailed usage examples.
+See the [Style Guide](https://knightjdr.github.io/decred-ui-react/) for
+detailed usage examples.
 
 ## Tests
 
