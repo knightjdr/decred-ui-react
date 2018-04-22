@@ -1,0 +1,184 @@
+@import "lib/style/theme";
+
+.decred-ui-pulse, {
+  animation: pulse-shadow 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one, {
+  animation: pulse-shadow 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two, {
+  animation: pulse-shadow 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite, {
+  animation: pulse-shadow 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-blueOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-blueOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-blueOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-blueOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-darkOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-darkOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-darkOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-darkOnTurquoise {
+  animation: pulse-shadow-turquoise 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-oneColorNegative {
+  animation: pulse-shadow 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-oneColorNegative {
+  animation: pulse-shadow 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-oneColorNegative {
+  animation: pulse-shadow 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-oneColorNegative {
+  animation: pulse-shadow 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-oneColorPositive {
+  animation: pulse-shadow-oneColor 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-oneColorPositive {
+  animation: pulse-shadow-oneColor 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-oneColorPositive {
+  animation: pulse-shadow-oneColor 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-oneColorPositive {
+  animation: pulse-shadow-oneColor 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-primaryBlue {
+  animation: pulse-shadow-primaryBlue 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-primaryBlue {
+  animation: pulse-shadow-primaryBlue 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-primaryBlue {
+  animation: pulse-shadow-primaryBlue 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-primaryBlue {
+  animation: pulse-shadow-primaryBlue 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-primaryNegative {
+  animation: pulse-shadow 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-primaryNegative {
+  animation: pulse-shadow 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-primaryNegative {
+  animation: pulse-shadow 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-primaryNegative {
+  animation: pulse-shadow 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-primaryPositive {
+  animation: pulse-shadow-oneColor 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-primaryPositive {
+  animation: pulse-shadow-oneColor 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-primaryPositive {
+  animation: pulse-shadow-oneColor 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-primaryPositive {
+  animation: pulse-shadow-oneColor 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-turquoiseOnBlue {
+  animation: pulse-shadow-onBlue 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-turquoiseOnBlue {
+  animation: pulse-shadow-onBlue 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-turquoiseOnBlue {
+  animation: pulse-shadow-onBlue 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-turquoiseOnBlue {
+  animation: pulse-shadow-onBlue 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-whiteOnBlue {
+  animation: pulse-shadow-onBlue 1.5s 5 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-one-whiteOnBlue {
+  animation: pulse-shadow-onBlue 1.5s 1 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-two-whiteOnBlue {
+  animation: pulse-shadow-onBlue 1.5s 2 cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse-infinite-whiteOnBlue {
+  animation: pulse-shadow-onBlue 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.decred-ui-pulse:hover,
+.decred-ui-pulse-blueOnTurquoise:hover,
+.decred-ui-pulse-darkOnTurquoise:hover,
+.decred-ui-pulse-oneColorNegative:hover,
+.decred-ui-pulse-oneColorPositive:hover,
+.decred-ui-pulse-primaryBlue:hover,
+.decred-ui-pulse-primaryNegative:hover,
+.decred-ui-pulse-primaryPositive:hover,
+.decred-ui-pulse-turquoiseOnBlue:hover,
+.decred-ui-pulse-whiteOnBlue:hover,
+.decred-ui-pulse-infinite:hover,
+.decred-ui-pulse-infinite-blueOnTurquoise:hover,
+.decred-ui-pulse-infinite-darkOnTurquoise:hover,
+.decred-ui-pulse-infinite-oneColorNegative:hover,
+.decred-ui-pulse-infinite-oneColorPositive:hover,
+.decred-ui-pulse-infinite-primaryBlue:hover,
+.decred-ui-pulse-infinite-primaryNegative:hover,
+.decred-ui-pulse-infinite-primaryPositive:hover,
+.decred-ui-pulse-infinite-turquoiseOnBlue:hover,
+.decred-ui-pulse-infinite-whiteOnBlue:hover {
+  animation: none;
+}
+@keyframes pulse-shadow {
+  from {
+    box-shadow: 0 0 0 0 rgba(12, 30, 62, 0.7);
+  }
+  to {
+    box-shadow: 0 0 0 10px rgba(12, 30, 62, 0);
+  }
+}
+@keyframes pulse-shadow-turquoise {
+  from {
+    box-shadow: 0 0 0 0 rgba(46, 214, 161, 0.7);
+  }
+  to {
+    box-shadow: 0 0 0 10px rgba(46, 214, 161, 0);
+  }
+}
+@keyframes pulse-shadow-oneColor {
+  from {
+    box-shadow: 0 0 0 0 rgba(230, 230, 230, 0.8);
+  }
+  to {
+    box-shadow: 0 0 0 10px rgba(230, 230, 230, 0);
+  }
+}
+@keyframes pulse-shadow-primaryBlue {
+  from {
+    box-shadow: 0 0 0 0 rgba(41, 82, 159, 0.7);
+  }
+  to {
+    box-shadow: 0 0 0 10px rgba(41, 82, 159, 0);
+  }
+}
+@keyframes pulse-shadow-onBlue {
+  from {
+    box-shadow: 0 0 0 0 rgba(41, 113, 255, 0.7);
+  }
+  to {
+    box-shadow: 0 0 0 10px rgba(41, 113, 255, 0);
+  }
+}

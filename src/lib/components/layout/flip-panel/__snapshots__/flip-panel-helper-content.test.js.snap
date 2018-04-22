@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlipPanelHelperContent Renders 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="decred-ui-flip-panel-container"
+    style={
+        Object {
+            "backgroundColor": "#000",
+            "boxShadow": "shadow",
+            "color": "#000",
+            "height": 200,
+            "width": 200,
+          }
+    }
+>
+    <div
+        className="decred-ui-flip-panel-side decred-ui-flip-panel-front"
+    >
+        front
+    </div>
+    <div
+        className="decred-ui-flip-panel-side decred-ui-flip-panel-back"
+    >
+        back
+    </div>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="decred-ui-flip-panel-side decred-ui-flip-panel-front"
+>
+          front
+</div>,
+        <div
+          className="decred-ui-flip-panel-side decred-ui-flip-panel-back"
+>
+          back
+</div>,
+      ],
+      "className": "decred-ui-flip-panel-container",
+      "style": Object {
+        "backgroundColor": "#000",
+        "boxShadow": "shadow",
+        "color": "#000",
+        "height": 200,
+        "width": 200,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "front",
+          "className": "decred-ui-flip-panel-side decred-ui-flip-panel-front",
+        },
+        "ref": null,
+        "rendered": "front",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "back",
+          "className": "decred-ui-flip-panel-side decred-ui-flip-panel-back",
+        },
+        "ref": null,
+        "rendered": "back",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="decred-ui-flip-panel-side decred-ui-flip-panel-front"
+>
+            front
+</div>,
+          <div
+            className="decred-ui-flip-panel-side decred-ui-flip-panel-back"
+>
+            back
+</div>,
+        ],
+        "className": "decred-ui-flip-panel-container",
+        "style": Object {
+          "backgroundColor": "#000",
+          "boxShadow": "shadow",
+          "color": "#000",
+          "height": 200,
+          "width": 200,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "front",
+            "className": "decred-ui-flip-panel-side decred-ui-flip-panel-front",
+          },
+          "ref": null,
+          "rendered": "front",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "back",
+            "className": "decred-ui-flip-panel-side decred-ui-flip-panel-back",
+          },
+          "ref": null,
+          "rendered": "back",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

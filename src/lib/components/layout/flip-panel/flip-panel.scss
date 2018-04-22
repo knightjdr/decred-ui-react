@@ -1,0 +1,45 @@
+@import "lib/style/theme";
+
+.decred-ui-flip-panel {
+  border: none;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+.decred-ui-flip-panel:focus {
+  outline: 0;
+}
+.decred-ui-flip-panel-container {
+  align-items: center;
+  background-color: $whiteOnBlue-primary;
+  color: $whiteOnBlue-text;
+  display: flex;
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.2em;
+  height: 200px;
+  justify-content: center;
+  position: relative;
+  transform: rotateY(0deg);
+  transition: transform 1s ease-in-out;
+  width: 200px;
+}
+.decred-ui-flip-panel-side {
+  padding: 10%;
+  position: absolute;
+  transition: opacity 0.01s linear 0.5s;
+}
+.decred-ui-flip-panel-back {
+  opacity: 0;
+  transform: scale(-1, 1);
+}
+.decred-ui-flip-panel-front {
+  opacity: 1,
+}
+.decred-ui-flip-panel:hover > .decred-ui-flip-panel-container {
+  transform: rotateY(180deg);
+}
+.decred-ui-flip-panel:hover .decred-ui-flip-panel-back {
+  opacity: 1;
+}
+.decred-ui-flip-panel:hover .decred-ui-flip-panel-front {
+  opacity: 0;
+}

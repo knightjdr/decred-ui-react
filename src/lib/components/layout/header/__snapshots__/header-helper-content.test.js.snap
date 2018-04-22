@@ -1,0 +1,392 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderHelperContent Only renders icon 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="decred-ui-header-content"
+>
+    <span
+        className="decred-ui-header-icon"
+    >
+        icon
+    </span>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="decred-ui-header-icon"
+>
+          icon
+</span>,
+        null,
+      ],
+      "className": "decred-ui-header-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "icon",
+          "className": "decred-ui-header-icon",
+        },
+        "ref": null,
+        "rendered": "icon",
+        "type": "span",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="decred-ui-header-icon"
+>
+            icon
+</span>,
+          null,
+        ],
+        "className": "decred-ui-header-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "icon",
+            "className": "decred-ui-header-icon",
+          },
+          "ref": null,
+          "rendered": "icon",
+          "type": "span",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`HeaderHelperContent Only renders text 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="decred-ui-header-content"
+>
+    <div
+        className="decred-ui-header-text"
+        style={
+            Object {
+                "color": "#000000",
+                "marginLeft": 0,
+                "marginTop": -2,
+              }
+        }
+    >
+        text
+    </div>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        null,
+        <div
+          className="decred-ui-header-text"
+          style={
+                    Object {
+                              "color": "#000000",
+                              "marginLeft": 0,
+                              "marginTop": -2,
+                            }
+          }
+>
+          text
+</div>,
+      ],
+      "className": "decred-ui-header-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "text",
+          "className": "decred-ui-header-text",
+          "style": Object {
+            "color": "#000000",
+            "marginLeft": 0,
+            "marginTop": -2,
+          },
+        },
+        "ref": null,
+        "rendered": "text",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          null,
+          <div
+            className="decred-ui-header-text"
+            style={
+                        Object {
+                                    "color": "#000000",
+                                    "marginLeft": 0,
+                                    "marginTop": -2,
+                                  }
+            }
+>
+            text
+</div>,
+        ],
+        "className": "decred-ui-header-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "text",
+            "className": "decred-ui-header-text",
+            "style": Object {
+              "color": "#000000",
+              "marginLeft": 0,
+              "marginTop": -2,
+            },
+          },
+          "ref": null,
+          "rendered": "text",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`HeaderHelperContent Renders with icon and text 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="decred-ui-header-content"
+>
+    <span
+        className="decred-ui-header-icon"
+    >
+        icon
+    </span>
+    <div
+        className="decred-ui-header-text"
+        style={
+            Object {
+                "color": "#000000",
+                "marginLeft": 6,
+                "marginTop": -2,
+              }
+        }
+    >
+        text
+    </div>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="decred-ui-header-icon"
+>
+          icon
+</span>,
+        <div
+          className="decred-ui-header-text"
+          style={
+                    Object {
+                              "color": "#000000",
+                              "marginLeft": 6,
+                              "marginTop": -2,
+                            }
+          }
+>
+          text
+</div>,
+      ],
+      "className": "decred-ui-header-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "icon",
+          "className": "decred-ui-header-icon",
+        },
+        "ref": null,
+        "rendered": "icon",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "text",
+          "className": "decred-ui-header-text",
+          "style": Object {
+            "color": "#000000",
+            "marginLeft": 6,
+            "marginTop": -2,
+          },
+        },
+        "ref": null,
+        "rendered": "text",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="decred-ui-header-icon"
+>
+            icon
+</span>,
+          <div
+            className="decred-ui-header-text"
+            style={
+                        Object {
+                                    "color": "#000000",
+                                    "marginLeft": 6,
+                                    "marginTop": -2,
+                                  }
+            }
+>
+            text
+</div>,
+        ],
+        "className": "decred-ui-header-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "icon",
+            "className": "decred-ui-header-icon",
+          },
+          "ref": null,
+          "rendered": "icon",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "text",
+            "className": "decred-ui-header-text",
+            "style": Object {
+              "color": "#000000",
+              "marginLeft": 6,
+              "marginTop": -2,
+            },
+          },
+          "ref": null,
+          "rendered": "text",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

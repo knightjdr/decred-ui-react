@@ -1,0 +1,26 @@
+.orange-background {
+  background-color: #fd714a;
+  padding: 5px 0;
+}
+.orange-background-inline {
+  background-color: #fd714a;
+  vertical-align: bottom;
+}
+.wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.wrapper > *:not(:last-child) {
+  margin-right: 10px;
+}
+.large-margin > *:not(:last-child) {
+  margin-right: 20px;
+}
+.wrapper-vertical > *:not(:last-child) {
+  margin-bottom: 10px;
+}

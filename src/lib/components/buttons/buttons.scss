@@ -1,0 +1,122 @@
+@import "lib/style/theme";
+
+.decred-ui-button:focus {
+  outline: 0;
+}
+
+.decred-ui-button-blueOnTurquoise {
+  background-color: $blueOnTurquoise-primary;
+  color: $blueOnTurquoise-text;
+}
+.decred-ui-button-blueOnTurquoise:hover {
+  background: $blueOnTurquoise-focus radial-gradient(circle, transparent 1%, $blueOnTurquoise-focus 1%) center/15000%;
+}
+.decred-ui-button-blueOnTurquoise:active {
+  background-color: $blueOnTurquoise-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-darkOnTurquoise {
+  background-color: $darkOnTurquoise-primary;
+  color: $darkOnTurquoise-text;
+}
+.decred-ui-button-darkOnTurquoise:hover {
+  background: $darkOnTurquoise-focus radial-gradient(circle, transparent 1%, $darkOnTurquoise-focus 1%) center/15000%;
+}
+.decred-ui-button-darkOnTurquoise:active {
+  background-color: $darkOnTurquoise-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-oneColorNegative {
+  background-color: $oneColorNegative-primary;
+  color: $oneColorNegative-text;
+}
+.decred-ui-button-oneColorNegative:hover {
+  background: $oneColorNegative-focus radial-gradient(circle, transparent 1%, $oneColorNegative-focus 1%) center/15000%;
+}
+.decred-ui-button-oneColorNegative:active {
+  background-color: $oneColorNegative-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-oneColorPositive {
+  background-color: $oneColorPositive-primary;
+  color: $oneColorPositive-text;
+}
+.decred-ui-button-oneColorPositive:hover {
+  background: $oneColorPositive-focus radial-gradient(circle, transparent 1%, $oneColorPositive-focus 1%) center/15000%;
+}
+.decred-ui-button-oneColorPositive:active {
+  background-color: $oneColorPositive-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-primaryBlue {
+  background-color: $primaryBlue-primary;
+  color: $primaryBlue-text;
+}
+.decred-ui-button-primaryBlue:hover {
+  background: $primaryBlue-focus radial-gradient(circle, transparent 1%, $primaryBlue-focus 1%) center/15000%;
+}
+.decred-ui-button-primaryBlue:active {
+  background-color: $primaryBlue-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-primaryNegative {
+  background-color: $primaryNegative-primary;
+  color: $primaryNegative-text;
+}
+.decred-ui-button-primaryNegative:hover {
+  background: $primaryNegative-focus radial-gradient(circle, transparent 1%, $primaryNegative-focus 1%) center/15000%;
+}
+.decred-ui-button-primaryNegative:active {
+  background-color: $primaryNegative-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-primaryPositive {
+  background-color: $primaryPositive-primary;
+  color: $primaryPositive-text;
+}
+.decred-ui-button-primaryPositive:hover {
+  background: $primaryPositive-focus radial-gradient(circle, transparent 1%, $primaryPositive-focus 1%) center/15000%;
+}
+.decred-ui-button-primaryPositive:active {
+  background-color: $primaryPositive-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-turquoiseOnBlue {
+  background-color: $turquoiseOnBlue-primary;
+  color: $turquoiseOnBlue-text;
+}
+.decred-ui-button-turquoiseOnBlue:hover {
+  background: $turquoiseOnBlue-focus radial-gradient(circle, transparent 1%, $turquoiseOnBlue-focus 1%) center/15000%;
+}
+.decred-ui-button-turquoiseOnBlue:active {
+  background-color: $turquoiseOnBlue-active;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.decred-ui-button-whiteOnBlue {
+  background-color: $whiteOnBlue-primary;
+  color: $whiteOnBlue-text;
+}
+.decred-ui-button-whiteOnBlue:hover {
+  background: $whiteOnBlue-focus radial-gradient(circle, transparent 1%, $whiteOnBlue-focus 1%) center/15000%;
+}
+.decred-ui-button-whiteOnBlue:active {
+  background-color: $whiteOnBlue-active;
+  background-size: 100%;
+  transition: background 0s;
+}

@@ -1,0 +1,425 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextTransform Renders default text without children 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextTransform
+    color="#000"
+    ratio={0.78}
+    size={18}
+>
+    Object {
+        "case": "lower",
+        "text": "de",
+      }
+    Object {
+        "case": "upper",
+        "text": "cred",
+      }
+</TextTransform>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="decred-ui-text-lower"
+          style={
+                    Object {
+                              "color": "#fff",
+                              "fontFamily": "SourceSansPro, sans-serif",
+                              "fontSize": 18,
+                            }
+          }
+>
+          de
+</span>,
+        <span
+          className="decred-ui-text-upper"
+          style={
+                    Object {
+                              "color": "#fff",
+                              "fontFamily": "SourceSansPro, sans-serif",
+                              "fontSize": 18,
+                            }
+          }
+>
+          cred
+</span>,
+      ],
+      "className": "decred-ui-text-transform",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1234",
+        "nodeType": "host",
+        "props": Object {
+          "children": "de",
+          "className": "decred-ui-text-lower",
+          "style": Object {
+            "color": "#fff",
+            "fontFamily": "SourceSansPro, sans-serif",
+            "fontSize": 18,
+          },
+        },
+        "ref": null,
+        "rendered": "de",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": "1234",
+        "nodeType": "host",
+        "props": Object {
+          "children": "cred",
+          "className": "decred-ui-text-upper",
+          "style": Object {
+            "color": "#fff",
+            "fontFamily": "SourceSansPro, sans-serif",
+            "fontSize": 18,
+          },
+        },
+        "ref": null,
+        "rendered": "cred",
+        "type": "span",
+      },
+    ],
+    "type": "span",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="decred-ui-text-lower"
+            style={
+                        Object {
+                                    "color": "#fff",
+                                    "fontFamily": "SourceSansPro, sans-serif",
+                                    "fontSize": 18,
+                                  }
+            }
+>
+            de
+</span>,
+          <span
+            className="decred-ui-text-upper"
+            style={
+                        Object {
+                                    "color": "#fff",
+                                    "fontFamily": "SourceSansPro, sans-serif",
+                                    "fontSize": 18,
+                                  }
+            }
+>
+            cred
+</span>,
+        ],
+        "className": "decred-ui-text-transform",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1234",
+          "nodeType": "host",
+          "props": Object {
+            "children": "de",
+            "className": "decred-ui-text-lower",
+            "style": Object {
+              "color": "#fff",
+              "fontFamily": "SourceSansPro, sans-serif",
+              "fontSize": 18,
+            },
+          },
+          "ref": null,
+          "rendered": "de",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": "1234",
+          "nodeType": "host",
+          "props": Object {
+            "children": "cred",
+            "className": "decred-ui-text-upper",
+            "style": Object {
+              "color": "#fff",
+              "fontFamily": "SourceSansPro, sans-serif",
+              "fontSize": 18,
+            },
+          },
+          "ref": null,
+          "rendered": "cred",
+          "type": "span",
+        },
+      ],
+      "type": "span",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`TextTransform Renders with children 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextTransform
+    color="#000"
+    ratio={0.78}
+    size={18}
+>
+    Object {
+        "case": "lower",
+        "text": "lower",
+      }
+    Object {
+        "case": "upper",
+        "text": "upper",
+      }
+    Object {
+        "case": "mixed",
+        "text": "mixed",
+      }
+</TextTransform>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="decred-ui-text-lower"
+          style={
+                    Object {
+                              "color": "#fff",
+                              "fontFamily": "SourceSansPro, sans-serif",
+                              "fontSize": 18,
+                            }
+          }
+>
+          lower
+</span>,
+        <span
+          className="decred-ui-text-upper"
+          style={
+                    Object {
+                              "color": "#fff",
+                              "fontFamily": "SourceSansPro, sans-serif",
+                              "fontSize": 18,
+                            }
+          }
+>
+          upper
+</span>,
+        <span
+          className="decred-ui-text-mixed"
+          style={
+                    Object {
+                              "color": "#fff",
+                              "fontFamily": "SourceSansPro, sans-serif",
+                              "fontSize": 18,
+                            }
+          }
+>
+          mixed
+</span>,
+      ],
+      "className": "decred-ui-text-transform",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1234",
+        "nodeType": "host",
+        "props": Object {
+          "children": "lower",
+          "className": "decred-ui-text-lower",
+          "style": Object {
+            "color": "#fff",
+            "fontFamily": "SourceSansPro, sans-serif",
+            "fontSize": 18,
+          },
+        },
+        "ref": null,
+        "rendered": "lower",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": "1234",
+        "nodeType": "host",
+        "props": Object {
+          "children": "upper",
+          "className": "decred-ui-text-upper",
+          "style": Object {
+            "color": "#fff",
+            "fontFamily": "SourceSansPro, sans-serif",
+            "fontSize": 18,
+          },
+        },
+        "ref": null,
+        "rendered": "upper",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": "1234",
+        "nodeType": "host",
+        "props": Object {
+          "children": "mixed",
+          "className": "decred-ui-text-mixed",
+          "style": Object {
+            "color": "#fff",
+            "fontFamily": "SourceSansPro, sans-serif",
+            "fontSize": 18,
+          },
+        },
+        "ref": null,
+        "rendered": "mixed",
+        "type": "span",
+      },
+    ],
+    "type": "span",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="decred-ui-text-lower"
+            style={
+                        Object {
+                                    "color": "#fff",
+                                    "fontFamily": "SourceSansPro, sans-serif",
+                                    "fontSize": 18,
+                                  }
+            }
+>
+            lower
+</span>,
+          <span
+            className="decred-ui-text-upper"
+            style={
+                        Object {
+                                    "color": "#fff",
+                                    "fontFamily": "SourceSansPro, sans-serif",
+                                    "fontSize": 18,
+                                  }
+            }
+>
+            upper
+</span>,
+          <span
+            className="decred-ui-text-mixed"
+            style={
+                        Object {
+                                    "color": "#fff",
+                                    "fontFamily": "SourceSansPro, sans-serif",
+                                    "fontSize": 18,
+                                  }
+            }
+>
+            mixed
+</span>,
+        ],
+        "className": "decred-ui-text-transform",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1234",
+          "nodeType": "host",
+          "props": Object {
+            "children": "lower",
+            "className": "decred-ui-text-lower",
+            "style": Object {
+              "color": "#fff",
+              "fontFamily": "SourceSansPro, sans-serif",
+              "fontSize": 18,
+            },
+          },
+          "ref": null,
+          "rendered": "lower",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": "1234",
+          "nodeType": "host",
+          "props": Object {
+            "children": "upper",
+            "className": "decred-ui-text-upper",
+            "style": Object {
+              "color": "#fff",
+              "fontFamily": "SourceSansPro, sans-serif",
+              "fontSize": 18,
+            },
+          },
+          "ref": null,
+          "rendered": "upper",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": "1234",
+          "nodeType": "host",
+          "props": Object {
+            "children": "mixed",
+            "className": "decred-ui-text-mixed",
+            "style": Object {
+              "color": "#fff",
+              "fontFamily": "SourceSansPro, sans-serif",
+              "fontSize": 18,
+            },
+          },
+          "ref": null,
+          "rendered": "mixed",
+          "type": "span",
+        },
+      ],
+      "type": "span",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

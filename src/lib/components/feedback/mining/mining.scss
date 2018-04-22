@@ -1,0 +1,46 @@
+.decred-ui-mining-container {
+  display: inline-block;
+}
+.decred-ui-mining-svg {
+  vertical-align:bottom;
+}
+.decred-ui-mining-pickaxe {
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-name: decred-ui-mining;
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  opacity: 1;
+  transform-origin: 15% 80%;
+}
+@keyframes decred-ui-mining {
+  0% {
+    transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(25deg);
+  }
+  100% {
+    transform: rotateZ(-30deg);
+  }
+}
+.decred-ui-mining-blocks {
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-name: decred-ui-mining-blocks;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+@keyframes decred-ui-mining-blocks {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

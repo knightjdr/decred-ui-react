@@ -1,0 +1,19 @@
+.decred-ui-rectangular-button {
+  background-position: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: SourceSansPro, sans-serif;
+  height: 40px;
+  padding: 4px 10px;
+  transition: background 0.6s;
+  width: auto;
+}
+.decred-ui-rectangular-button-content {
+  align-items: center;
+  display: flex;
+}
+.decred-ui-rectangular-button-icon {
+  align-items: center;
+  display: flex;
+}

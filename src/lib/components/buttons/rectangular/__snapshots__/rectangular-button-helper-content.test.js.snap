@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RectangularButtonHelperContent Only renders icon 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="decred-ui-rectangular-button-content"
+>
+    <div
+        className="decred-ui-rectangular-button-icon"
+    >
+        icon
+    </div>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="decred-ui-rectangular-button-icon"
+>
+          icon
+</div>,
+        null,
+      ],
+      "className": "decred-ui-rectangular-button-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "icon",
+          "className": "decred-ui-rectangular-button-icon",
+        },
+        "ref": null,
+        "rendered": "icon",
+        "type": "div",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="decred-ui-rectangular-button-icon"
+>
+            icon
+</div>,
+          null,
+        ],
+        "className": "decred-ui-rectangular-button-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "icon",
+            "className": "decred-ui-rectangular-button-icon",
+          },
+          "ref": null,
+          "rendered": "icon",
+          "type": "div",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`RectangularButtonHelperContent Only renders text 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="decred-ui-rectangular-button-content"
+>
+    <div
+        className="decred-ui-rectangular-button-text"
+        style={
+            Object {
+                "color": "#000000",
+              }
+        }
+    >
+        text
+    </div>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        null,
+        <div
+          className="decred-ui-rectangular-button-text"
+          style={
+                    Object {
+                              "color": "#000000",
+                            }
+          }
+>
+          text
+</div>,
+      ],
+      "className": "decred-ui-rectangular-button-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "text",
+          "className": "decred-ui-rectangular-button-text",
+          "style": Object {
+            "color": "#000000",
+          },
+        },
+        "ref": null,
+        "rendered": "text",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          null,
+          <div
+            className="decred-ui-rectangular-button-text"
+            style={
+                        Object {
+                                    "color": "#000000",
+                                  }
+            }
+>
+            text
+</div>,
+        ],
+        "className": "decred-ui-rectangular-button-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "text",
+            "className": "decred-ui-rectangular-button-text",
+            "style": Object {
+              "color": "#000000",
+            },
+          },
+          "ref": null,
+          "rendered": "text",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`RectangularButtonHelperContent Renders with icon and text 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="decred-ui-rectangular-button-content"
+>
+    <div
+        className="decred-ui-rectangular-button-icon"
+    >
+        icon
+    </div>
+    <div
+        className="decred-ui-rectangular-button-text"
+        style={
+            Object {
+                "color": "#000000",
+                "marginLeft": 5,
+              }
+        }
+    >
+        text
+    </div>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="decred-ui-rectangular-button-icon"
+>
+          icon
+</div>,
+        <div
+          className="decred-ui-rectangular-button-text"
+          style={
+                    Object {
+                              "color": "#000000",
+                              "marginLeft": 5,
+                            }
+          }
+>
+          text
+</div>,
+      ],
+      "className": "decred-ui-rectangular-button-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "icon",
+          "className": "decred-ui-rectangular-button-icon",
+        },
+        "ref": null,
+        "rendered": "icon",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "text",
+          "className": "decred-ui-rectangular-button-text",
+          "style": Object {
+            "color": "#000000",
+            "marginLeft": 5,
+          },
+        },
+        "ref": null,
+        "rendered": "text",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="decred-ui-rectangular-button-icon"
+>
+            icon
+</div>,
+          <div
+            className="decred-ui-rectangular-button-text"
+            style={
+                        Object {
+                                    "color": "#000000",
+                                    "marginLeft": 5,
+                                  }
+            }
+>
+            text
+</div>,
+        ],
+        "className": "decred-ui-rectangular-button-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "icon",
+            "className": "decred-ui-rectangular-button-icon",
+          },
+          "ref": null,
+          "rendered": "icon",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "text",
+            "className": "decred-ui-rectangular-button-text",
+            "style": Object {
+              "color": "#000000",
+              "marginLeft": 5,
+            },
+          },
+          "ref": null,
+          "rendered": "text",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

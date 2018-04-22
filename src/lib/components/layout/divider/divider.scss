@@ -1,0 +1,24 @@
+.decred-ui-divider {
+  align-items: center;
+  display: flex;
+  font-family: SourceSansPro, sans-serif;
+  font-size: 18px;
+}
+.decred-ui-divider-left {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  content: '';
+  flex: 1;
+  margin-left: 5%;
+  margin-right: .5em;
+}
+.decred-ui-divider-right {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  content: '';
+  flex: 1;
+  margin-left: .5em;
+  margin-right: 5%;
+}
+.decred-ui-divider-content {
+  align-items: center;
+  display: flex;
+}
