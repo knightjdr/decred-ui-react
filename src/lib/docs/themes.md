@@ -1,6 +1,6 @@
 There are nine available color themes that can be applied to elements using
 the 'theme' prop. These themes have four relevent colors: primary color (background),
-accent 1 (used for the left portion of the decred logo), accent 2 (used for the right
+accent 1 (used for the left portion of the Decred logo), accent 2 (used for the right
 portion of the logo) and text color.
 
 <table>

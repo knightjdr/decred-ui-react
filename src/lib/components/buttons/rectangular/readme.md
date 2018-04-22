@@ -73,7 +73,7 @@
 
 <strong>Custom text</strong>
 Plain text can be passed as a child element. For text that matches the styling of the
-decred logo, use the text prop. See the <a href="#text">text</a> section for details
+Decred logo, use the text prop. See the <a href="#text">text</a> section for details
 on formatting this array prop.
 
 ```jsx

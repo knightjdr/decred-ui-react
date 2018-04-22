@@ -1,4 +1,4 @@
-Text in the decred logo contains a mixture of upper and lower case letters, with
+Text in the Decred logo contains a mixture of upper and lower case letters, with
 'de' in lowercase and 'CRED' in uppercase with a smaller relative font size. You can
 use the TextTransform component to generate similarly styled text in the Source Sans Pro
 font. Text is passed to this component as a child array. This array should contain objects
