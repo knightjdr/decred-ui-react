@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  assetsDir: 'src/lib/assets/',
   ignore: [
     '**/__tests__/**',
     '**/*.test.{js,jsx,ts,tsx}',
