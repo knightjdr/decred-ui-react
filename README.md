@@ -3,16 +3,16 @@
 A collection of [Decred](https://decred.org/) themed UI elements for
 your React project.
 
-## install
+## Install
 
 `npm i --save decred-ui-react`
 
-## usage
+## Usage
 
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { RoundButton } from decred-ui-react
+import { RoundButton } from 'decred-ui-react'
 
 ReactDOM.render(
   <RoundButton />,
