@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import BoxShadow from '../../../shared/box-shadow';
 import Color from '../../../shared/color';
-import Content from './rectangular-button-helper-content';
+import Content from './rectangularbutton-content';
 import Logo from '../../../shared/logo';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';
 
 import '../buttons.css';
-import './rectangular-button.css';
+import './rectangularbutton.css';
 
 const RectangularButton = ({
   boxShadow,
@@ -81,7 +81,7 @@ const RectangularButton = ({
 RectangularButton.defaultProps = {
   boxShadow: true,
   children: null,
-  className: '',
+  className: null,
   icon: 'dcr',
   iconColor: null,
   iconOnly: false,

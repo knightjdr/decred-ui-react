@@ -3,14 +3,14 @@ import { shallow } from 'enzyme';
 
 import BoxShadow from '../../../shared/box-shadow';
 import Color from '../../../shared/color';
-import Content from './flip-panel-helper-content';
-import FlipPanel from './flip-panel';
+import Content from './flippanel-content';
+import FlipPanel from './flippanel';
 import Theme from '../../../shared/theme-single-color';
 
 // mocks
 jest.mock('../../../shared/box-shadow');
 jest.mock('../../../shared/color');
-jest.mock('./flip-panel-helper-content');
+jest.mock('./flippanel-content');
 
 // mock theme
 jest.mock('../../../shared/theme-single-color');

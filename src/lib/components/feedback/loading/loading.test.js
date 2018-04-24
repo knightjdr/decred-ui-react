@@ -2,12 +2,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Color from '../../../shared/color';
-import Content from './loading-helper-content';
+import Content from './loading-content';
 import Loading from './loading';
 import Scale from '../../../shared/scale';
 
 // mocks
-jest.mock('./loading-helper-content');
+jest.mock('./loading-content');
 
 // mock color
 jest.mock('../../../shared/color');

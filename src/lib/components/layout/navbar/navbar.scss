@@ -1,0 +1,56 @@
+@import 'lib/style/theme';
+
+.Navbar {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  left: 0;
+  padding: 0px 10px;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 20px);
+  z-index: 10;
+}
+.Navbar-default {
+  background-color: $primaryNegative-primary;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.Navbar-link {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0px 5px;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+.Navbar-default a.Navbar-link:link {
+  color: $primaryNegative-text;
+}
+.Navbar-default a.Navbar-link:visited {
+  color: $primaryNegative-text;
+}
+.Navbar-default a.Navbar-link:hover {
+  color: $primaryNegative-accent2;
+}
+.Navbar-link-container {
+  position: absolute;
+  right: 10px;
+}
+.Navbar-logo > svg {
+  display: block;
+}
+.Navbar-logo-link {
+  float: left;
+}
+.Navbar-transparent {
+  background-color: transparent;
+}
+.Navbar-transparent a.Navbar-link:link {
+  color: $primaryNegative-primary;
+}
+.Navbar-transparent a.Navbar-link:visited {
+  color: $primaryNegative-primary;
+}
+.Navbar-transparent a.Navbar-link:hover {
+  color: $primaryNegative-accent1;
+}

@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 
 import Color from '../../shared/color';
 import DecimalAdjust from '../../shared/decimal-adjust';
-import TextTransform from './text-transform-component';
+import TextTransform from './texttransform';
 
 // mock color
 jest.mock('../../shared/color');

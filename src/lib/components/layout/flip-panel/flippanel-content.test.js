@@ -1,14 +1,14 @@
 import { shallow } from 'enzyme';
 
-import FlipPanelHelperContent from './flip-panel-helper-content';
+import FlipPanelContent from './flippanel-content';
 
-describe('FlipPanelHelperContent', () => {
+describe('FlipPanelContent', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
 
   test('Renders', () => {
-    const wrapper = shallow(FlipPanelHelperContent(
+    const wrapper = shallow(FlipPanelContent(
       'front',
       'back',
       '#000',
@@ -25,7 +25,7 @@ describe('FlipPanelHelperContent', () => {
   });
 
   test('Has expected style', () => {
-    const wrapper = shallow(FlipPanelHelperContent(
+    const wrapper = shallow(FlipPanelContent(
       'front',
       'back',
       '#fff',
@@ -43,7 +43,7 @@ describe('FlipPanelHelperContent', () => {
   });
 
   test('Custom style object can attach custom styles and takes precedent', () => {
-    const wrapper = shallow(FlipPanelHelperContent(
+    const wrapper = shallow(FlipPanelContent(
       'front',
       'back',
       '#fff',

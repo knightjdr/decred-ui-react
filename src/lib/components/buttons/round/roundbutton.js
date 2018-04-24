@@ -7,7 +7,7 @@ import Logo from '../../../shared/logo';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';
 
-import './round-button.css';
+import './roundbutton.css';
 
 const RoundButton = ({
   boxShadow,
@@ -41,9 +41,13 @@ const RoundButton = ({
     },
     ...style,
   };
+  let classes = `decred-ui-button decred-ui-round-button ${themeValues.className}`;
+  if (className) {
+    classes += ` ${className}`;
+  }
   return (
     <button
-      className={`decred-ui-button decred-ui-round-button ${themeValues.className} ${className}`}
+      className={classes}
       onClick={onClick}
       style={buttonStyle}
     >
@@ -54,7 +58,7 @@ const RoundButton = ({
 
 RoundButton.defaultProps = {
   boxShadow: true,
-  className: '',
+  className: null,
   icon: 'dcr',
   iconColor: null,
   onClick: null,

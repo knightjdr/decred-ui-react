@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Color from '../../../shared/color';
-import Content from './mining-helper-content';
+import Content from './mining-content';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';
 

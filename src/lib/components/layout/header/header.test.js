@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Color from '../../../shared/color';
-import Content from './header-helper-content';
+import Content from './header-content';
 import Header from './header';
 import Logo from '../../../shared/logo';
 import Scale from '../../../shared/scale';
@@ -10,7 +10,7 @@ import Theme from '../../../shared/theme';
 
 // mocks
 jest.mock('../../../shared/color');
-jest.mock('./header-helper-content');
+jest.mock('./header-content');
 
 // mock logo
 jest.mock('../../../shared/logo');

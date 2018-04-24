@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Color from '../../../shared/color';
-import Content from './divider-helper-content';
+import Content from './divider-content';
 import Divider from './divider';
 import Logo from '../../../shared/logo';
 import Scale from '../../../shared/scale';
@@ -10,7 +10,7 @@ import Theme from '../../../shared/theme';
 
 // mocks
 jest.mock('../../../shared/color');
-jest.mock('./divider-helper-content');
+jest.mock('./divider-content');
 
 // mock logo
 jest.mock('../../../shared/logo');

@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HeaderHelperContent Only renders icon 1`] = `
+exports[`DividerContent Only renders icon 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div
-    className="decred-ui-header-content"
+    className="decred-ui-divider-content"
 >
     <span
-        className="decred-ui-header-icon"
+        className="decred-ui-divider-icon"
     >
         icon
     </span>
@@ -27,13 +27,13 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <span
-          className="decred-ui-header-icon"
+          className="decred-ui-divider-icon"
 >
           icon
 </span>,
         null,
       ],
-      "className": "decred-ui-header-content",
+      "className": "decred-ui-divider-content",
     },
     "ref": null,
     "rendered": Array [
@@ -43,7 +43,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "icon",
-          "className": "decred-ui-header-icon",
+          "className": "decred-ui-divider-icon",
         },
         "ref": null,
         "rendered": "icon",
@@ -61,13 +61,13 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <span
-            className="decred-ui-header-icon"
+            className="decred-ui-divider-icon"
 >
             icon
 </span>,
           null,
         ],
-        "className": "decred-ui-header-content",
+        "className": "decred-ui-divider-content",
       },
       "ref": null,
       "rendered": Array [
@@ -77,7 +77,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "icon",
-            "className": "decred-ui-header-icon",
+            "className": "decred-ui-divider-icon",
           },
           "ref": null,
           "rendered": "icon",
@@ -98,15 +98,15 @@ ShallowWrapper {
 }
 `;
 
-exports[`HeaderHelperContent Only renders text 1`] = `
+exports[`DividerContent Only renders text 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div
-    className="decred-ui-header-content"
+    className="decred-ui-divider-content"
 >
     <div
-        className="decred-ui-header-text"
+        className="decred-ui-divider-text"
         style={
             Object {
                 "color": "#000000",
@@ -133,7 +133,7 @@ ShallowWrapper {
       "children": Array [
         null,
         <div
-          className="decred-ui-header-text"
+          className="decred-ui-divider-text"
           style={
                     Object {
                               "color": "#000000",
@@ -145,7 +145,7 @@ ShallowWrapper {
           text
 </div>,
       ],
-      "className": "decred-ui-header-content",
+      "className": "decred-ui-divider-content",
     },
     "ref": null,
     "rendered": Array [
@@ -156,7 +156,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "text",
-          "className": "decred-ui-header-text",
+          "className": "decred-ui-divider-text",
           "style": Object {
             "color": "#000000",
             "marginLeft": 0,
@@ -179,7 +179,7 @@ ShallowWrapper {
         "children": Array [
           null,
           <div
-            className="decred-ui-header-text"
+            className="decred-ui-divider-text"
             style={
                         Object {
                                     "color": "#000000",
@@ -191,7 +191,7 @@ ShallowWrapper {
             text
 </div>,
         ],
-        "className": "decred-ui-header-content",
+        "className": "decred-ui-divider-content",
       },
       "ref": null,
       "rendered": Array [
@@ -202,7 +202,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "text",
-            "className": "decred-ui-header-text",
+            "className": "decred-ui-divider-text",
             "style": Object {
               "color": "#000000",
               "marginLeft": 0,
@@ -227,20 +227,20 @@ ShallowWrapper {
 }
 `;
 
-exports[`HeaderHelperContent Renders with icon and text 1`] = `
+exports[`DividerContent Renders with icon and text 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div
-    className="decred-ui-header-content"
+    className="decred-ui-divider-content"
 >
     <span
-        className="decred-ui-header-icon"
+        className="decred-ui-divider-icon"
     >
         icon
     </span>
     <div
-        className="decred-ui-header-text"
+        className="decred-ui-divider-text"
         style={
             Object {
                 "color": "#000000",
@@ -266,12 +266,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <span
-          className="decred-ui-header-icon"
+          className="decred-ui-divider-icon"
 >
           icon
 </span>,
         <div
-          className="decred-ui-header-text"
+          className="decred-ui-divider-text"
           style={
                     Object {
                               "color": "#000000",
@@ -283,7 +283,7 @@ ShallowWrapper {
           text
 </div>,
       ],
-      "className": "decred-ui-header-content",
+      "className": "decred-ui-divider-content",
     },
     "ref": null,
     "rendered": Array [
@@ -293,7 +293,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "icon",
-          "className": "decred-ui-header-icon",
+          "className": "decred-ui-divider-icon",
         },
         "ref": null,
         "rendered": "icon",
@@ -305,7 +305,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "text",
-          "className": "decred-ui-header-text",
+          "className": "decred-ui-divider-text",
           "style": Object {
             "color": "#000000",
             "marginLeft": 6,
@@ -327,12 +327,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <span
-            className="decred-ui-header-icon"
+            className="decred-ui-divider-icon"
 >
             icon
 </span>,
           <div
-            className="decred-ui-header-text"
+            className="decred-ui-divider-text"
             style={
                         Object {
                                     "color": "#000000",
@@ -344,7 +344,7 @@ ShallowWrapper {
             text
 </div>,
         ],
-        "className": "decred-ui-header-content",
+        "className": "decred-ui-divider-content",
       },
       "ref": null,
       "rendered": Array [
@@ -354,7 +354,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "icon",
-            "className": "decred-ui-header-icon",
+            "className": "decred-ui-divider-icon",
           },
           "ref": null,
           "rendered": "icon",
@@ -366,7 +366,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "text",
-            "className": "decred-ui-header-text",
+            "className": "decred-ui-divider-text",
             "style": Object {
               "color": "#000000",
               "marginLeft": 6,

@@ -2,14 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Color from '../../../shared/color';
-import Content from './mining-helper-content';
+import Content from './mining-content';
 import Mining from './mining';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';
 
 // mocks
 jest.mock('../../../shared/color');
-jest.mock('./mining-helper-content');
+jest.mock('./mining-content');
 
 // mock scale
 jest.mock('../../../shared/scale');

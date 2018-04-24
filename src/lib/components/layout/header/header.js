@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Color from '../../../shared/color';
-import Content from './header-helper-content';
+import Content from './header-content';
 import Logo from '../../../shared/logo';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';

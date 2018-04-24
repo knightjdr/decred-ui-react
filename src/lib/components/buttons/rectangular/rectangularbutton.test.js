@@ -3,16 +3,16 @@ import { shallow } from 'enzyme';
 
 import BoxShadow from '../../../shared/box-shadow';
 import Color from '../../../shared/color';
-import Content from './rectangular-button-helper-content';
+import Content from './rectangularbutton-content';
 import Logo from '../../../shared/logo';
-import RectangularButton from './rectangular-button';
+import RectangularButton from './rectangularbutton';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';
 
 // mocks
 jest.mock('../../../shared/box-shadow');
 jest.mock('../../../shared/color');
-jest.mock('./rectangular-button-helper-content');
+jest.mock('./rectangularbutton-content');
 
 // mock logo
 jest.mock('../../../shared/logo');

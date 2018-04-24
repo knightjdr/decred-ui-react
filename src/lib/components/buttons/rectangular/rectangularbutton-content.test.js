@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 
-import RectangularButtonHelperContent from './rectangular-button-helper-content';
+import RectangularButtonContent from './rectangularbutton-content';
 import TextTransform from '../../../shared/text-transform';
 
 jest.mock('../../../shared/text-transform');
@@ -15,13 +15,13 @@ const fontSize = 20;
 const fontSizeUpper = 15.6;
 const children = null;
 
-describe('RectangularButtonHelperContent', () => {
+describe('RectangularButtonContent', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
 
   test('Renders with icon and text', () => {
-    const wrapper = shallow(RectangularButtonHelperContent(
+    const wrapper = shallow(RectangularButtonContent(
       icon,
       text,
       iconOnly,
@@ -43,7 +43,7 @@ describe('RectangularButtonHelperContent', () => {
   });
 
   test('Only renders icon', () => {
-    const wrapper = shallow(RectangularButtonHelperContent(
+    const wrapper = shallow(RectangularButtonContent(
       icon,
       text,
       true,
@@ -61,7 +61,7 @@ describe('RectangularButtonHelperContent', () => {
   });
 
   test('Only renders text', () => {
-    const wrapper = shallow(RectangularButtonHelperContent(
+    const wrapper = shallow(RectangularButtonContent(
       icon,
       text,
       false,
@@ -79,7 +79,7 @@ describe('RectangularButtonHelperContent', () => {
   });
 
   test('Renders both icon and text if both set to true', () => {
-    const wrapper = shallow(RectangularButtonHelperContent(
+    const wrapper = shallow(RectangularButtonContent(
       icon,
       text,
       true,
@@ -96,7 +96,7 @@ describe('RectangularButtonHelperContent', () => {
   });
 
   test('Renders custom text color', () => {
-    const wrapper = shallow(RectangularButtonHelperContent(
+    const wrapper = shallow(RectangularButtonContent(
       icon,
       text,
       false,
@@ -111,7 +111,7 @@ describe('RectangularButtonHelperContent', () => {
   });
 
   test('Renders with children instead of text', () => {
-    const wrapper = shallow(RectangularButtonHelperContent(
+    const wrapper = shallow(RectangularButtonContent(
       icon,
       text,
       iconOnly,
@@ -128,7 +128,7 @@ describe('RectangularButtonHelperContent', () => {
   });
 
   test('Renders with no inline text color when null', () => {
-    const wrapper = shallow(RectangularButtonHelperContent(
+    const wrapper = shallow(RectangularButtonContent(
       icon,
       text,
       iconOnly,

@@ -1,8 +1,8 @@
-import LoadingHelperContent from './loading-helper-content';
+import LoadingContent from './loading-content';
 
 describe('LoadingHelperContent', () => {
   test('Returns content', () => {
-    const wrapper = LoadingHelperContent('#000', 20, 1.5);
+    const wrapper = LoadingContent('#000', 20, 1.5);
     expect(wrapper).toMatchSnapshot();
   });
 });

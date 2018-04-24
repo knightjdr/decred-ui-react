@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import BoxShadow from '../../../shared/box-shadow';
 import Color from '../../../shared/color';
 import Logo from '../../../shared/logo';
-import RoundButton from './round-button';
+import RoundButton from './roundbutton';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';
 

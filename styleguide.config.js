@@ -7,7 +7,7 @@ module.exports = {
     '**/*.test.{js,jsx,ts,tsx}',
     '**/*.spec.{js,jsx,ts,tsx}',
     '**/*.d.ts',
-    '**/*-helper-*.js',
+    '**/*-*.js',
   ],
   require: [
     path.join(__dirname, 'src/lib/index.css'),

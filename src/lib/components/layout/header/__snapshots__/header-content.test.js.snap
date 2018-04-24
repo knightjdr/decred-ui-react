@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RectangularButtonHelperContent Only renders icon 1`] = `
+exports[`HeaderContent Only renders icon 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div
-    className="decred-ui-rectangular-button-content"
+    className="decred-ui-header-content"
 >
-    <div
-        className="decred-ui-rectangular-button-icon"
+    <span
+        className="decred-ui-header-icon"
     >
         icon
-    </div>
+    </span>
 </div>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,14 +26,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div
-          className="decred-ui-rectangular-button-icon"
+        <span
+          className="decred-ui-header-icon"
 >
           icon
-</div>,
+</span>,
         null,
       ],
-      "className": "decred-ui-rectangular-button-content",
+      "className": "decred-ui-header-content",
     },
     "ref": null,
     "rendered": Array [
@@ -43,11 +43,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "icon",
-          "className": "decred-ui-rectangular-button-icon",
+          "className": "decred-ui-header-icon",
         },
         "ref": null,
         "rendered": "icon",
-        "type": "div",
+        "type": "span",
       },
       null,
     ],
@@ -60,14 +60,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
-            className="decred-ui-rectangular-button-icon"
+          <span
+            className="decred-ui-header-icon"
 >
             icon
-</div>,
+</span>,
           null,
         ],
-        "className": "decred-ui-rectangular-button-content",
+        "className": "decred-ui-header-content",
       },
       "ref": null,
       "rendered": Array [
@@ -77,11 +77,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "icon",
-            "className": "decred-ui-rectangular-button-icon",
+            "className": "decred-ui-header-icon",
           },
           "ref": null,
           "rendered": "icon",
-          "type": "div",
+          "type": "span",
         },
         null,
       ],
@@ -98,18 +98,20 @@ ShallowWrapper {
 }
 `;
 
-exports[`RectangularButtonHelperContent Only renders text 1`] = `
+exports[`HeaderContent Only renders text 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div
-    className="decred-ui-rectangular-button-content"
+    className="decred-ui-header-content"
 >
     <div
-        className="decred-ui-rectangular-button-text"
+        className="decred-ui-header-text"
         style={
             Object {
                 "color": "#000000",
+                "marginLeft": 0,
+                "marginTop": -2,
               }
         }
     >
@@ -131,17 +133,19 @@ ShallowWrapper {
       "children": Array [
         null,
         <div
-          className="decred-ui-rectangular-button-text"
+          className="decred-ui-header-text"
           style={
                     Object {
                               "color": "#000000",
+                              "marginLeft": 0,
+                              "marginTop": -2,
                             }
           }
 >
           text
 </div>,
       ],
-      "className": "decred-ui-rectangular-button-content",
+      "className": "decred-ui-header-content",
     },
     "ref": null,
     "rendered": Array [
@@ -152,9 +156,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "text",
-          "className": "decred-ui-rectangular-button-text",
+          "className": "decred-ui-header-text",
           "style": Object {
             "color": "#000000",
+            "marginLeft": 0,
+            "marginTop": -2,
           },
         },
         "ref": null,
@@ -173,17 +179,19 @@ ShallowWrapper {
         "children": Array [
           null,
           <div
-            className="decred-ui-rectangular-button-text"
+            className="decred-ui-header-text"
             style={
                         Object {
                                     "color": "#000000",
+                                    "marginLeft": 0,
+                                    "marginTop": -2,
                                   }
             }
 >
             text
 </div>,
         ],
-        "className": "decred-ui-rectangular-button-content",
+        "className": "decred-ui-header-content",
       },
       "ref": null,
       "rendered": Array [
@@ -194,9 +202,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "text",
-            "className": "decred-ui-rectangular-button-text",
+            "className": "decred-ui-header-text",
             "style": Object {
               "color": "#000000",
+              "marginLeft": 0,
+              "marginTop": -2,
             },
           },
           "ref": null,
@@ -217,24 +227,25 @@ ShallowWrapper {
 }
 `;
 
-exports[`RectangularButtonHelperContent Renders with icon and text 1`] = `
+exports[`HeaderContent Renders with icon and text 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div
-    className="decred-ui-rectangular-button-content"
+    className="decred-ui-header-content"
 >
-    <div
-        className="decred-ui-rectangular-button-icon"
+    <span
+        className="decred-ui-header-icon"
     >
         icon
-    </div>
+    </span>
     <div
-        className="decred-ui-rectangular-button-text"
+        className="decred-ui-header-text"
         style={
             Object {
                 "color": "#000000",
-                "marginLeft": 5,
+                "marginLeft": 6,
+                "marginTop": -2,
               }
         }
     >
@@ -254,24 +265,25 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div
-          className="decred-ui-rectangular-button-icon"
+        <span
+          className="decred-ui-header-icon"
 >
           icon
-</div>,
+</span>,
         <div
-          className="decred-ui-rectangular-button-text"
+          className="decred-ui-header-text"
           style={
                     Object {
                               "color": "#000000",
-                              "marginLeft": 5,
+                              "marginLeft": 6,
+                              "marginTop": -2,
                             }
           }
 >
           text
 </div>,
       ],
-      "className": "decred-ui-rectangular-button-content",
+      "className": "decred-ui-header-content",
     },
     "ref": null,
     "rendered": Array [
@@ -281,11 +293,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "icon",
-          "className": "decred-ui-rectangular-button-icon",
+          "className": "decred-ui-header-icon",
         },
         "ref": null,
         "rendered": "icon",
-        "type": "div",
+        "type": "span",
       },
       Object {
         "instance": null,
@@ -293,10 +305,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "text",
-          "className": "decred-ui-rectangular-button-text",
+          "className": "decred-ui-header-text",
           "style": Object {
             "color": "#000000",
-            "marginLeft": 5,
+            "marginLeft": 6,
+            "marginTop": -2,
           },
         },
         "ref": null,
@@ -313,24 +326,25 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
-            className="decred-ui-rectangular-button-icon"
+          <span
+            className="decred-ui-header-icon"
 >
             icon
-</div>,
+</span>,
           <div
-            className="decred-ui-rectangular-button-text"
+            className="decred-ui-header-text"
             style={
                         Object {
                                     "color": "#000000",
-                                    "marginLeft": 5,
+                                    "marginLeft": 6,
+                                    "marginTop": -2,
                                   }
             }
 >
             text
 </div>,
         ],
-        "className": "decred-ui-rectangular-button-content",
+        "className": "decred-ui-header-content",
       },
       "ref": null,
       "rendered": Array [
@@ -340,11 +354,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "icon",
-            "className": "decred-ui-rectangular-button-icon",
+            "className": "decred-ui-header-icon",
           },
           "ref": null,
           "rendered": "icon",
-          "type": "div",
+          "type": "span",
         },
         Object {
           "instance": null,
@@ -352,10 +366,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "text",
-            "className": "decred-ui-rectangular-button-text",
+            "className": "decred-ui-header-text",
             "style": Object {
               "color": "#000000",
-              "marginLeft": 5,
+              "marginLeft": 6,
+              "marginTop": -2,
             },
           },
           "ref": null,

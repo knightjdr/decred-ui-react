@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import BoxShadow from '../../../shared/box-shadow';
 import Color from '../../../shared/color';
-import Content from './flip-panel-helper-content';
+import Content from './flippanel-content';
 import Theme from '../../../shared/theme-single-color';
 
-import './flip-panel.css';
+import './flippanel.css';
 
 const FlipPanel = ({
   back,

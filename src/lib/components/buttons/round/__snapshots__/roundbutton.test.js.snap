@@ -1,32 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RectangularButton Renders with defaults 1`] = `
+exports[`RoundButton Renders with defaults 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RectangularButton
+  Symbol(enzyme.__unrendered__): <RoundButton
     boxShadow={true}
-    className=""
+    className={null}
     icon="dcr"
     iconColor={null}
-    iconOnly={false}
     onClick={null}
     scale={1}
     style={Object {}}
-    text={
-        Array [
-            Object {
-              "case": "lower",
-              "text": "de",
-            },
-            Object {
-              "case": "upper",
-              "text": "cred",
-            },
-          ]
-    }
-    textColor={null}
-    textOnly={false}
     theme="primaryNegative"
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -41,18 +26,17 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": undefined,
-      "className": "decred-ui-button decred-ui-rectangular-button decred-ui-button-primaryNegative",
+      "children": "logo",
+      "className": "decred-ui-button decred-ui-round-button decred-ui-button-primaryNegative",
       "onClick": null,
       "style": Object {
         "boxShadow": "0px 6px 10px rgba(0, 0, 0, 0.1)",
-        "fontSize": 18,
         "height": 40,
-        "padding": "4px 8px",
+        "width": 40,
       },
     },
     "ref": null,
-    "rendered": null,
+    "rendered": "logo",
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -61,18 +45,17 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": undefined,
-        "className": "decred-ui-button decred-ui-rectangular-button decred-ui-button-primaryNegative",
+        "children": "logo",
+        "className": "decred-ui-button decred-ui-round-button decred-ui-button-primaryNegative",
         "onClick": null,
         "style": Object {
           "boxShadow": "0px 6px 10px rgba(0, 0, 0, 0.1)",
-          "fontSize": 18,
           "height": 40,
-          "padding": "4px 8px",
+          "width": 40,
         },
       },
       "ref": null,
-      "rendered": null,
+      "rendered": "logo",
       "type": "button",
     },
   ],

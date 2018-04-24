@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Color from '../../../shared/color';
-import Content from './divider-helper-content';
+import Content from './divider-content';
 import Logo from '../../../shared/logo';
 import Scale from '../../../shared/scale';
 import Theme from '../../../shared/theme';

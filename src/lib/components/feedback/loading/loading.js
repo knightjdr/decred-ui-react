@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Color from '../../../shared/color';
-import Content from './loading-helper-content';
+import Content from './loading-content';
 import Scale from '../../../shared/scale';
 
 import './loading.css';

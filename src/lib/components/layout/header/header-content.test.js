@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 
-import DividerHelperContent from './divider-helper-content';
+import HeaderContent from './header-content';
 import TextTransform from '../../../shared/text-transform';
 
 jest.mock('../../../shared/text-transform');
@@ -16,13 +16,13 @@ const fontSizeUpper = 15.6;
 const children = null;
 const textStyle = {};
 
-describe('DividerHelperContent', () => {
+describe('HeaderContent', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
 
   test('Renders with icon and text', () => {
-    const wrapper = shallow(DividerHelperContent(
+    const wrapper = shallow(HeaderContent(
       icon,
       text,
       iconOnly,
@@ -34,10 +34,10 @@ describe('DividerHelperContent', () => {
       textStyle,
     ));
     expect(wrapper).toMatchSnapshot();
-    const iconElement = wrapper.find('.decred-ui-divider-icon');
+    const iconElement = wrapper.find('.decred-ui-header-icon');
     expect(iconElement.length).toBe(1);
     expect(iconElement.text()).toBe('icon');
-    const textElement = wrapper.find('.decred-ui-divider-text');
+    const textElement = wrapper.find('.decred-ui-header-text');
     expect(textElement.length).toBe(1);
     expect(textElement.text()).toBe('text');
     expect(TextTransform).toHaveBeenCalledTimes(1);
@@ -45,7 +45,7 @@ describe('DividerHelperContent', () => {
   });
 
   test('Only renders icon', () => {
-    const wrapper = shallow(DividerHelperContent(
+    const wrapper = shallow(HeaderContent(
       icon,
       text,
       true,
@@ -57,14 +57,14 @@ describe('DividerHelperContent', () => {
       textStyle,
     ));
     expect(wrapper).toMatchSnapshot();
-    const iconElement = wrapper.find('.decred-ui-divider-icon');
+    const iconElement = wrapper.find('.decred-ui-header-icon');
     expect(iconElement.length).toBe(1);
-    const textElement = wrapper.find('.decred-ui-divider-text');
+    const textElement = wrapper.find('.decred-ui-header-text');
     expect(textElement.length).toBe(0);
   });
 
   test('Only renders text', () => {
-    const wrapper = shallow(DividerHelperContent(
+    const wrapper = shallow(HeaderContent(
       icon,
       text,
       false,
@@ -76,14 +76,14 @@ describe('DividerHelperContent', () => {
       textStyle,
     ));
     expect(wrapper).toMatchSnapshot();
-    const iconElement = wrapper.find('.decred-ui-divider-icon');
+    const iconElement = wrapper.find('.decred-ui-header-icon');
     expect(iconElement.length).toBe(0);
-    const textElement = wrapper.find('.decred-ui-divider-text');
+    const textElement = wrapper.find('.decred-ui-header-text');
     expect(textElement.length).toBe(1);
   });
 
   test('Renders both icon and text if both set to true', () => {
-    const wrapper = shallow(DividerHelperContent(
+    const wrapper = shallow(HeaderContent(
       icon,
       text,
       true,
@@ -94,14 +94,14 @@ describe('DividerHelperContent', () => {
       children,
       textStyle,
     ));
-    const iconElement = wrapper.find('.decred-ui-divider-icon');
+    const iconElement = wrapper.find('.decred-ui-header-icon');
     expect(iconElement.length).toBe(1);
-    const textElement = wrapper.find('.decred-ui-divider-text');
+    const textElement = wrapper.find('.decred-ui-header-text');
     expect(textElement.length).toBe(1);
   });
 
   test('Renders custom text color', () => {
-    const wrapper = shallow(DividerHelperContent(
+    const wrapper = shallow(HeaderContent(
       icon,
       text,
       false,
@@ -112,12 +112,12 @@ describe('DividerHelperContent', () => {
       children,
       textStyle,
     ));
-    const textElementStyle = wrapper.find('.decred-ui-divider-text').props().style;
+    const textElementStyle = wrapper.find('.decred-ui-header-text').props().style;
     expect(textElementStyle).toHaveProperty('color', '#FD714A');
   });
 
   test('Renders with children instead of text', () => {
-    const wrapper = shallow(DividerHelperContent(
+    const wrapper = shallow(HeaderContent(
       icon,
       text,
       iconOnly,
@@ -128,14 +128,14 @@ describe('DividerHelperContent', () => {
       'children',
       textStyle,
     ));
-    const textElement = wrapper.find('.decred-ui-divider-text');
+    const textElement = wrapper.find('.decred-ui-header-text');
     expect(textElement.length).toBe(1);
     expect(textElement.text()).toBe('children');
     expect(TextTransform).toHaveBeenCalledTimes(0);
   });
 
   test('Renders with custom style and this style takes precedent', () => {
-    const wrapper = shallow(DividerHelperContent(
+    const wrapper = shallow(HeaderContent(
       icon,
       text,
       iconOnly,
@@ -149,7 +149,7 @@ describe('DividerHelperContent', () => {
         testProp: 'test',
       },
     ));
-    const textElement = wrapper.find('.decred-ui-divider-text');
+    const textElement = wrapper.find('.decred-ui-header-text');
     expect(textElement.length).toBe(1);
     expect(textElement.props().style).toHaveProperty('color', '#ffff00');
     expect(textElement.props().style).toHaveProperty('testProp', 'test');
