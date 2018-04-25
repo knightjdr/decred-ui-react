@@ -31,30 +31,48 @@ class Navbar extends Component {
     return (
       <NavbarContent
         background={this.props.background}
+        boxShadow={this.props.boxShadow}
         fixed={this.props.fixed}
+        icon={this.props.icon}
         links={this.props.links}
         smallScreen={this.state.isSmallScreen}
         style={this.props.style}
+        theme={this.props.theme}
       />
     );
   }
 }
 
 Navbar.defaultProps = {
-  background: false,
+  background: true,
+  boxShadow: true,
   fixed: true,
+  icon: 'dcr',
   links: [],
   style: {},
+  theme: 'primaryNegative',
 };
 
 Navbar.propTypes = {
+  /** Show the background. If false, a transparent background will be used */
   background: PropTypes.bool,
+  /** Add shadow */
+  boxShadow: PropTypes.bool,
+  /** Fix the navbar to the top of the viewport */
   fixed: PropTypes.bool,
+  /** Icon. Options: atomic, dcr, decrediton, guide, lightning, miner, politeia or voting */
+  icon: PropTypes.string,
+  /** Navigation links */
   links: PropTypes.arrayOf(PropTypes.shape({
     route: PropTypes.string,
     text: PropTypes.string,
   })),
+  /** Custom style */
   style: PropTypes.shape({}),
+  /** Button color theme. Options: blueOnTurquoise, darkOnTurquoise, oneColorNegative,
+  * oneColorPositive, primaryBlue, primaryNegative, primaryPositive, turquoiseOnBlue
+  * or whiteOnBlue */
+  theme: PropTypes.string,
 };
 
 export default Navbar;

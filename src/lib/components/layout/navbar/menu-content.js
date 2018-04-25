@@ -12,28 +12,28 @@ const MenuHelperContent = ({
   showMenu,
   viewMenu,
 }) => (
-  <div className="Navbar-menu-container">
+  <div className="decred-ui-navbar-menu-container">
     <button
-      className="Navbar-menu-button"
+      className="decred-ui-navbar-menu-button"
       onClick={showMenu}
     >
       {Bars()}
     </button>
     <button
-      className="Navbar-menu-backdrop"
+      className="decred-ui-navbar-menu-backdrop"
       onClick={closeBackdrop}
       style={{
         pointerEvents: viewMenu ? 'auto' : 'none',
       }}
     >
       <div
-        className={`Navbar-menu ${viewMenu ? 'Navbar-menu-show' : 'Navbar-menu-hide'}`}
+        className={`decred-ui-navbar-menu ${viewMenu ? 'decred-ui-navbar-menu-show' : 'decred-ui-navbar-menu-hide'}`}
       >
         <ul>
           {
             links.map(link => (
               <NavLink
-                className="Navbar-menu-navlink"
+                className="decred-ui-navbar-menu-navlink"
                 key={link.text}
                 to={link.route}
               >

@@ -1,7 +1,6 @@
 @import 'lib/style/theme';
 
-.Navbar-menu {
-  background-color: $primaryNegative-text;
+.decred-ui-navbar-menu {
   border-radius: 4px;
   box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.4);
   opacity: 0;
@@ -12,30 +11,27 @@
   transform-origin: top right;
   z-index: 11;
 }
-.Navbar-menu > ul {
+.decred-ui-navbar-menu > ul {
   font-family: SourceSansPro, sans-serif;
   font-size: 1.5em;
+  font-weight: bold;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.Navbar-menu li {
-  color: $primaryNegative-primary;
+.decred-ui-navbar-menu li {
   padding: 5px 10px;
   transition: color 0.3s linear;
 }
-.Navbar-menu li:hover {
-  color: $primaryNegative-accent1;
-}
-.Navbar-menu.Navbar-menu-hide {
+.decred-ui-navbar-menu.decred-ui-navbar-menu-hide {
   opacity: 0;
   transform: scale(0);
 }
-.Navbar-menu.Navbar-menu-show {
+.decred-ui-navbar-menu.decred-ui-navbar-menu-show {
   opacity: 1;
   transform: scale(1);
 }
-.Navbar-menu-backdrop {
+.decred-ui-navbar-menu-backdrop {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   height: 100vh;
@@ -45,30 +41,199 @@
   width: 100vw;
   z-index: 10;
 }
-.Navbar-menu-bars {
+.decred-ui-navbar-menu-bars {
   transition: fill 0.3s linear;
 }
-.Navbar-menu-button {
+.decred-ui-navbar-menu-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-.Navbar-menu-button:hover .Navbar-menu-bars {
-  fill: $primaryNegative-accent2;
-}
-.Navbar-menu-button:focus {
+.decred-ui-navbar-menu-button:focus {
   outline: 0;
 }
-.Navbar-menu-container {
+.decred-ui-navbar-menu-container {
   cursor: pointer;
   margin-top: 3px;
 }
-.Navbar-menu-navlink {
+.decred-ui-navbar-menu-navlink {
   text-decoration: none;
 }
-.Navbar-default .Navbar-menu-bars {
+// Themes
+.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu {
+  background-color: $blueOnTurquoise-text;
+}
+.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu li {
+  color: $blueOnTurquoise-primary;
+}
+.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu li:hover {
+  color: $blueOnTurquoise-focus;
+}
+.decred-ui-navbar-blueOnTurquoise  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $blueOnTurquoise-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu-bars {
+  fill: $blueOnTurquoise-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu-bars {
+  fill: $blueOnTurquoise-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $blueOnTurquoise-primary;
+}
+.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu {
+  background-color: $darkOnTurquoise-text;
+}
+.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu li {
+  color: $darkOnTurquoise-primary;
+}
+.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu li:hover {
+  color: $darkOnTurquoise-focus;
+}
+.decred-ui-navbar-darkOnTurquoise  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $darkOnTurquoise-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu-bars {
+  fill: $darkOnTurquoise-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu-bars {
+  fill: $darkOnTurquoise-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $darkOnTurquoise-primary;
+}
+.decred-ui-navbar-oneColorNegative .decred-ui-navbar-menu {
+  background-color: $oneColorNegative-text;
+}
+.decred-ui-navbar-oneColorNegative .decred-ui-navbar-menu li {
+  color: $oneColorNegative-primary;
+}
+.decred-ui-navbar-oneColorNegative .decred-ui-navbar-menu li:hover {
+  color: $oneColorNegative-focus;
+}
+.decred-ui-navbar-oneColorNegative .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $oneColorNegative-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorNegative .decred-ui-navbar-menu-bars {
+  fill: $oneColorNegative-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorNegative .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $oneColorNegative-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorNegative .decred-ui-navbar-menu-bars {
+  fill: $oneColorNegative-text;
+}
+.decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu {
+  background-color: $oneColorPositive-text;
+}
+.decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu li {
+  color: $oneColorPositive-primary;
+}
+.decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu li:hover {
+  color: $oneColorPositive-focus;
+}
+.decred-ui-navbar-oneColorPositive  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $oneColorPositive-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu-bars {
+  fill: $oneColorPositive-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu-bars {
+  fill: $oneColorPositive-text;
+}
+.decred-ui-navbar-primaryBlue .decred-ui-navbar-menu {
+  background-color: $primaryBlue-text;
+}
+.decred-ui-navbar-primaryBlue .decred-ui-navbar-menu li {
+  color: $primaryBlue-primary;
+}
+.decred-ui-navbar-primaryBlue .decred-ui-navbar-menu li:hover {
+  color: $primaryBlue-accent2;
+}
+.decred-ui-navbar-primaryBlue  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $primaryBlue-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryBlue .decred-ui-navbar-menu-bars {
+  fill: $primaryBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryBlue .decred-ui-navbar-menu-bars {
+  fill: $primaryBlue-primary;
+}
+.decred-ui-navbar-primaryNegative .decred-ui-navbar-menu {
+  background-color: $primaryNegative-text;
+}
+.decred-ui-navbar-primaryNegative .decred-ui-navbar-menu li {
+  color: $primaryNegative-primary;
+}
+.decred-ui-navbar-primaryNegative .decred-ui-navbar-menu li:hover {
+  color: $primaryNegative-accent1;
+}
+.decred-ui-navbar-primaryNegative  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $primaryNegative-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryNegative .decred-ui-navbar-menu-bars {
   fill: $primaryNegative-text;
 }
-.Navbar-transparent .Navbar-menu-bars {
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryNegative .decred-ui-navbar-menu-bars {
   fill: $primaryNegative-primary;
+}
+.decred-ui-navbar-primaryPositive .decred-ui-navbar-menu {
+  background-color: $primaryPositive-text;
+}
+.decred-ui-navbar-primaryPositive .decred-ui-navbar-menu li {
+  color: $primaryPositive-primary;
+}
+.decred-ui-navbar-primaryPositive .decred-ui-navbar-menu li:hover {
+  color: $primaryPositive-accent1;
+}
+.decred-ui-navbar-primaryPositive  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $primaryPositive-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryPositive .decred-ui-navbar-menu-bars {
+  fill: $primaryPositive-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryPositive .decred-ui-navbar-menu-bars {
+  fill: $primaryPositive-text;
+}
+.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu {
+  background-color: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu li {
+  color: $turquoiseOnBlue-primary;
+}
+.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu li:hover {
+  color: $turquoiseOnBlue-focus;
+}
+.decred-ui-navbar-turquoiseOnBlue  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu-bars {
+  fill: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu-bars {
+  fill: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $turquoiseOnBlue-primary;
+}
+.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu {
+  background-color: $whiteOnBlue-text;
+}
+.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu li {
+  color: $whiteOnBlue-primary;
+}
+.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu li:hover {
+  color: $whiteOnBlue-focus;
+}
+.decred-ui-navbar-whiteOnBlue  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $whiteOnBlue-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu-bars {
+  fill: $whiteOnBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+  fill: $whiteOnBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu-bars {
+  fill: $whiteOnBlue-text;
 }

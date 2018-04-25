@@ -1,9 +1,9 @@
 @import 'lib/style/theme';
 
-.Navbar {
+.decred-ui-navbar {
   align-items: center;
   display: flex;
-  height: 40px;
+  height: 50px;
   left: 0;
   padding: 0px 10px;
   position: fixed;
@@ -11,11 +11,7 @@
   width: calc(100vw - 20px);
   z-index: 10;
 }
-.Navbar-default {
-  background-color: $primaryNegative-primary;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.Navbar-link {
+.decred-ui-navbar-link {
   font-family: SourceSansPro, sans-serif;
   font-size: 1.1em;
   font-weight: bold;
@@ -23,34 +19,207 @@
   text-decoration: none;
   transition: color 0.3s linear;
 }
-.Navbar-default a.Navbar-link:link {
-  color: $primaryNegative-text;
-}
-.Navbar-default a.Navbar-link:visited {
-  color: $primaryNegative-text;
-}
-.Navbar-default a.Navbar-link:hover {
-  color: $primaryNegative-accent2;
-}
-.Navbar-link-container {
+.decred-ui-navbar-link-container {
   position: absolute;
   right: 10px;
 }
-.Navbar-logo > svg {
+.decred-ui-navbar-logo > svg {
   display: block;
 }
-.Navbar-logo-link {
+.decred-ui-navbar-logo-link {
   float: left;
 }
-.Navbar-transparent {
+.decred-ui-navbar-transparent {
   background-color: transparent;
 }
-.Navbar-transparent a.Navbar-link:link {
+
+// Themes
+.decred-ui-navbar-default.decred-ui-navbar-blueOnTurquoise {
+  background-color: $blueOnTurquoise-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-blueOnTurquoise a.decred-ui-navbar-link:link {
+  color: $blueOnTurquoise-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-blueOnTurquoise a.decred-ui-navbar-link:visited {
+  color: $blueOnTurquoise-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-blueOnTurquoise a.decred-ui-navbar-link:hover {
+  color: $blueOnTurquoise-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-blueOnTurquoise a.decred-ui-navbar-link:link {
+  color: $blueOnTurquoise-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-blueOnTurquoise a.decred-ui-navbar-link:visited {
+  color: $blueOnTurquoise-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-blueOnTurquoise a.decred-ui-navbar-link:hover {
+  color: $blueOnTurquoise-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-darkOnTurquoise {
+  background-color: $darkOnTurquoise-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-darkOnTurquoise a.decred-ui-navbar-link:link {
+  color: $darkOnTurquoise-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-darkOnTurquoise a.decred-ui-navbar-link:visited {
+  color: $darkOnTurquoise-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-darkOnTurquoise a.decred-ui-navbar-link:hover {
+  color: $darkOnTurquoise-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-darkOnTurquoise a.decred-ui-navbar-link:link {
+  color: $darkOnTurquoise-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-darkOnTurquoise a.decred-ui-navbar-link:visited {
+  color: $darkOnTurquoise-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-darkOnTurquoise a.decred-ui-navbar-link:hover {
+  color: $darkOnTurquoise-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorNegative {
+  background-color: $oneColorNegative-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorNegative a.decred-ui-navbar-link:link {
+  color: $oneColorNegative-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorNegative a.decred-ui-navbar-link:visited {
+  color: $oneColorNegative-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorNegative a.decred-ui-navbar-link:hover {
+  color: $oneColorNegative-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorNegative a.decred-ui-navbar-link:link {
+  color: $oneColorNegative-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorNegative a.decred-ui-navbar-link:visited {
+  color: $oneColorNegative-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorNegative a.decred-ui-navbar-link:hover {
+  color: $oneColorNegative-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorPositive {
+  background-color: $oneColorPositive-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorPositive a.decred-ui-navbar-link:link {
+  color: $oneColorPositive-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorPositive a.decred-ui-navbar-link:visited {
+  color: $oneColorPositive-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-oneColorPositive a.decred-ui-navbar-link:hover {
+  color: $oneColorPositive-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorPositive a.decred-ui-navbar-link:link {
+  color: $oneColorPositive-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorPositive a.decred-ui-navbar-link:visited {
+  color: $oneColorPositive-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-oneColorPositive a.decred-ui-navbar-link:hover {
+  color: $oneColorPositive-accent1;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryBlue {
+  background-color: $primaryBlue-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryBlue a.decred-ui-navbar-link:link {
+  color: $primaryBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryBlue a.decred-ui-navbar-link:visited {
+  color: $primaryBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryBlue a.decred-ui-navbar-link:hover {
+  color: $primaryBlue-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryBlue a.decred-ui-navbar-link:link {
+  color: $primaryBlue-primary;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryBlue a.decred-ui-navbar-link:visited {
+  color: $primaryBlue-primary;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryBlue a.decred-ui-navbar-link:hover {
+  color: $primaryBlue-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryNegative {
+  background-color: $primaryNegative-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryNegative a.decred-ui-navbar-link:link {
+  color: $primaryNegative-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryNegative a.decred-ui-navbar-link:visited {
+  color: $primaryNegative-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryNegative a.decred-ui-navbar-link:hover {
+  color: $primaryNegative-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryNegative a.decred-ui-navbar-link:link {
   color: $primaryNegative-primary;
 }
-.Navbar-transparent a.Navbar-link:visited {
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryNegative a.decred-ui-navbar-link:visited {
   color: $primaryNegative-primary;
 }
-.Navbar-transparent a.Navbar-link:hover {
-  color: $primaryNegative-accent1;
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryNegative a.decred-ui-navbar-link:hover {
+  color: $primaryNegative-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryPositive {
+  background-color: $primaryPositive-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryPositive a.decred-ui-navbar-link:link {
+  color: $primaryPositive-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryPositive a.decred-ui-navbar-link:visited {
+  color: $primaryPositive-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-primaryPositive a.decred-ui-navbar-link:hover {
+  color: $primaryPositive-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryPositive a.decred-ui-navbar-link:link {
+  color: $primaryPositive-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryPositive a.decred-ui-navbar-link:visited {
+  color: $primaryPositive-accent1;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-primaryPositive a.decred-ui-navbar-link:hover {
+  color: $primaryPositive-accent2;
+}
+.decred-ui-navbar-default.decred-ui-navbar-turquoiseOnBlue {
+  background-color: $turquoiseOnBlue-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-turquoiseOnBlue a.decred-ui-navbar-link:link {
+  color: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-turquoiseOnBlue a.decred-ui-navbar-link:visited {
+  color: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-turquoiseOnBlue a.decred-ui-navbar-link:hover {
+  color: $turquoiseOnBlue-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-turquoiseOnBlue a.decred-ui-navbar-link:link {
+  color: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-turquoiseOnBlue a.decred-ui-navbar-link:visited {
+  color: $turquoiseOnBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-turquoiseOnBlue a.decred-ui-navbar-link:hover {
+  color: $turquoiseOnBlue-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-whiteOnBlue {
+  background-color: $whiteOnBlue-primary;
+}
+.decred-ui-navbar-default.decred-ui-navbar-whiteOnBlue a.decred-ui-navbar-link:link {
+  color: $whiteOnBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-whiteOnBlue a.decred-ui-navbar-link:visited {
+  color: $whiteOnBlue-text;
+}
+.decred-ui-navbar-default.decred-ui-navbar-whiteOnBlue a.decred-ui-navbar-link:hover {
+  color: $whiteOnBlue-accent2;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-whiteOnBlue a.decred-ui-navbar-link:link {
+  color: $whiteOnBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-whiteOnBlue a.decred-ui-navbar-link:visited {
+  color: $whiteOnBlue-text;
+}
+.decred-ui-navbar-transparent.decred-ui-navbar-whiteOnBlue a.decred-ui-navbar-link:hover {
+  color: $whiteOnBlue-accent2;
 }
