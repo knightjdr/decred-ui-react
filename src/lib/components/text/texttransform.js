@@ -20,7 +20,7 @@ const TextTransform = ({
             className={`decred-ui-text-${str.case}`}
             key={shortid.generate()}
             style={{
-              color: Color(color),
+              color: color ? Color(color) : 'inherit',
               fontFamily: 'SourceSansPro, sans-serif',
               fontSize: str.case === 'upper' ? sizeUpper : size,
             }}
@@ -35,7 +35,7 @@ const TextTransform = ({
 
 TextTransform.defaultProps = {
   children: [{ case: 'lower', text: 'de' }, { case: 'upper', text: 'cred' }],
-  color: '#000',
+  color: null,
   size: 18,
   ratio: 0.78,
 };

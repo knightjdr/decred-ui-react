@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 import Bars from './bars-content';
+import MenuLinksHelper from './menu-links-helper';
 
 import './menu.css';
 
@@ -31,17 +31,7 @@ const MenuHelperContent = ({
       >
         <ul>
           {
-            links.map(link => (
-              <NavLink
-                className="decred-ui-navbar-menu-navlink"
-                key={link.text}
-                to={link.route}
-              >
-                <li>
-                  {link.text}
-                </li>
-              </NavLink>
-            ))
+            MenuLinksHelper(links)
           }
         </ul>
       </div>
@@ -52,8 +42,13 @@ const MenuHelperContent = ({
 MenuHelperContent.propTypes = {
   closeBackdrop: PropTypes.func.isRequired,
   links: PropTypes.arrayOf(PropTypes.shape({
+    href: PropTypes.bool,
+    key: PropTypes.string,
     route: PropTypes.string,
-    text: PropTypes.string,
+    text: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.string,
+    ]),
   })).isRequired,
   showMenu: PropTypes.func.isRequired,
   viewMenu: PropTypes.bool.isRequired,

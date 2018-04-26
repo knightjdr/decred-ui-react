@@ -34,6 +34,7 @@ class Navbar extends Component {
         boxShadow={this.props.boxShadow}
         fixed={this.props.fixed}
         icon={this.props.icon}
+        iconColor={this.props.iconColor}
         links={this.props.links}
         smallScreen={this.state.isSmallScreen}
         style={this.props.style}
@@ -48,6 +49,7 @@ Navbar.defaultProps = {
   boxShadow: true,
   fixed: true,
   icon: 'dcr',
+  iconColor: null,
   links: [],
   style: {},
   theme: 'primaryNegative',
@@ -62,10 +64,17 @@ Navbar.propTypes = {
   fixed: PropTypes.bool,
   /** Icon. Options: atomic, dcr, decrediton, guide, lightning, miner, politeia or voting */
   icon: PropTypes.string,
+  /** Custom icon color. Overrides theme */
+  iconColor: PropTypes.string,
   /** Navigation links */
   links: PropTypes.arrayOf(PropTypes.shape({
+    href: PropTypes.bool,
+    key: PropTypes.string,
     route: PropTypes.string,
-    text: PropTypes.string,
+    text: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.string,
+    ]),
   })),
   /** Custom style */
   style: PropTypes.shape({}),

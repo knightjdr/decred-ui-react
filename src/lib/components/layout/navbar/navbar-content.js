@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Color from '../../../shared/color';
+import LinksHelper from './links-helper';
 import Logo from '../../../shared/logo';
 import Menu from './menu-container';
 import Theme from '../../../shared/theme';
@@ -13,6 +15,7 @@ const NavbarHelperContent = ({
   boxShadow,
   fixed,
   icon,
+  iconColor,
   links,
   smallScreen,
   style,
@@ -22,19 +25,11 @@ const NavbarHelperContent = ({
   const linksElement = smallScreen ?
     <Menu links={links} />
     :
-    links.map(link => (
-      <NavLink
-        className="decred-ui-navbar-link"
-        key={link.text}
-        to={link.route}
-      >
-        { link.text }
-      </NavLink>
-    ));
+    LinksHelper(links);
   const themeValues = Theme(theme, 'navbar');
   const logo = Logo(
-    themeValues.accent1,
-    themeValues.accent2,
+    Color(iconColor) || themeValues.accent1,
+    Color(iconColor) || themeValues.accent2,
     25,
     icon,
   );
@@ -69,14 +64,24 @@ const NavbarHelperContent = ({
   );
 };
 
+NavbarHelperContent.defaultProps = {
+  iconColor: null,
+};
+
 NavbarHelperContent.propTypes = {
   background: PropTypes.bool.isRequired,
   boxShadow: PropTypes.bool.isRequired,
   fixed: PropTypes.bool.isRequired,
   icon: PropTypes.string.isRequired,
+  iconColor: PropTypes.string,
   links: PropTypes.arrayOf(PropTypes.shape({
+    href: PropTypes.bool,
+    key: PropTypes.string,
     route: PropTypes.string,
-    text: PropTypes.string,
+    text: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.string,
+    ]),
   })).isRequired,
   smallScreen: PropTypes.bool.isRequired,
   style: PropTypes.shape({}).isRequired,

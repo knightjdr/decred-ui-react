@@ -34,8 +34,13 @@ class MenuContainer extends Component {
 
 MenuContainer.propTypes = {
   links: PropTypes.arrayOf(PropTypes.shape({
+    href: PropTypes.bool,
+    key: PropTypes.string,
     route: PropTypes.string,
-    text: PropTypes.string,
+    text: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.string,
+    ]),
   })).isRequired,
 };
 
