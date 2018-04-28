@@ -13,7 +13,7 @@ import TextTransform from './components/text/texttransform';
 
 describe('Index', () => {
   test('Has expected exported module number', () => {
-    expect(Object.keys(IndexExports).length).toBe(8);
+    expect(Object.keys(IndexExports).length).toBe(9);
   });
 
   test('Exports Divider', () => {

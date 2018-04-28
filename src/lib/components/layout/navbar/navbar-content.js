@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 import Color from '../../../shared/color';
+import IconLinkHelper from './iconlink-helper';
 import LinksHelper from './links-helper';
 import Logo from '../../../shared/logo';
 import Menu from './menu-container';
@@ -17,11 +17,12 @@ const NavbarHelperContent = ({
   icon,
   iconColor,
   links,
+  logoLink,
   smallScreen,
   style,
   theme,
 }) => {
-  const className = background ? 'decred-ui-navbar-default' : 'decred-ui-navbar-transparent';
+  let className = background ? 'decred-ui-navbar-default' : 'decred-ui-navbar-transparent';
   const linksElement = smallScreen ?
     <Menu links={links} />
     :
@@ -40,23 +41,14 @@ const NavbarHelperContent = ({
     },
     ...style,
   };
-  let classes = `decred-ui-navbar ${themeValues.className}`;
-  if (className) {
-    classes += ` ${className}`;
-  }
+  const classes = `decred-ui-navbar ${themeValues.className}`;
+  className += ` ${classes}`;
   return (
     <div
-      className={classes}
+      className={className}
       style={navBarStyle}
     >
-      <NavLink
-        className="decred-ui-navbar-logo-link"
-        to="/"
-      >
-        <div className="decred-ui-navbar-logo">
-          {logo}
-        </div>
-      </NavLink>
+      { IconLinkHelper(logo, logoLink) }
       <div className="decred-ui-navbar-link-container">
         { linksElement }
       </div>
@@ -77,12 +69,18 @@ NavbarHelperContent.propTypes = {
   links: PropTypes.arrayOf(PropTypes.shape({
     href: PropTypes.bool,
     key: PropTypes.string,
+    newTab: PropTypes.bool,
     route: PropTypes.string,
     text: PropTypes.oneOfType([
       PropTypes.object,
       PropTypes.string,
     ]),
   })).isRequired,
+  logoLink: PropTypes.shape({
+    href: PropTypes.bool,
+    newTab: PropTypes.bool,
+    route: PropTypes.string,
+  }).isRequired,
   smallScreen: PropTypes.bool.isRequired,
   style: PropTypes.shape({}).isRequired,
   theme: PropTypes.string.isRequired,

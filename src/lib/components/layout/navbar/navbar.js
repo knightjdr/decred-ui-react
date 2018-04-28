@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import NavbarContent from './navbar-content';
 
-const smallScreenSize = 700;
+const smallScreenSize = 680;
 
 class Navbar extends Component {
   constructor(props) {
@@ -36,6 +36,7 @@ class Navbar extends Component {
         icon={this.props.icon}
         iconColor={this.props.iconColor}
         links={this.props.links}
+        logoLink={this.props.logoLink}
         smallScreen={this.state.isSmallScreen}
         style={this.props.style}
         theme={this.props.theme}
@@ -51,6 +52,10 @@ Navbar.defaultProps = {
   icon: 'dcr',
   iconColor: null,
   links: [],
+  logoLink: {
+    newTab: false,
+    route: '/',
+  },
   style: {},
   theme: 'primaryNegative',
 };
@@ -70,12 +75,19 @@ Navbar.propTypes = {
   links: PropTypes.arrayOf(PropTypes.shape({
     href: PropTypes.bool,
     key: PropTypes.string,
+    newTab: PropTypes.bool,
     route: PropTypes.string,
     text: PropTypes.oneOfType([
       PropTypes.object,
       PropTypes.string,
     ]),
   })),
+  /** Logo link */
+  logoLink: PropTypes.shape({
+    href: PropTypes.bool,
+    newTab: PropTypes.bool,
+    route: PropTypes.string,
+  }),
   /** Custom style */
   style: PropTypes.shape({}),
   /** Button color theme. Options: blueOnTurquoise, darkOnTurquoise, oneColorNegative,

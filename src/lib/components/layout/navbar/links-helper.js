@@ -3,14 +3,20 @@ import { NavLink } from 'react-router-dom';
 
 const LinksHelper = links => (
   links.map((link) => {
+    const props = link.newTab ?
+      {
+        rel: 'noreferrer nofollow',
+        target: '_blank',
+      }
+      :
+      {};
     if (link.href) {
       return (
         <a
           className="decred-ui-navbar-link"
           href={link.route}
           key={link.key || link.text}
-          rel="noreferrer nofollow"
-          target="_blank"
+          {...props}
         >
           { link.text }
         </a>

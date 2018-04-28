@@ -1,6 +1,8 @@
-The Navbar component can be either fixed or positioned absolutely so that it will
+The Navbar component can be fixed or positioned absolutely so that it will
 scroll with the page. All of the examples here use absolute positioning to fit
-within the styleguide layout.
+within the styleguide layout. In all of the code examples the Navbar is
+wrapped in a div with class "navbar-wrapper" that is used only for the
+purposes of this styleguide and can be ignored.
 
 <strong>Default</strong>
 
@@ -289,7 +291,10 @@ const { BrowserRouter } = require('react-router-dom');
 <strong>Links</strong>
 The Navbar component assumes you are using react router for navigation. If you
 are not or wish to include a url link, set the href key to true and pass the url
-via the route.
+via the route. If you would like the link to open in a new tab (rel="noreferrer nofollow"
+and target="_blank"), then set the newTab prop to true. The right links are
+set using the "links" prop and the icon/logo link is set using the logoLink prop.
+The default link for the logo is the home route "/".
 
 ```jsx
 const { BrowserRouter } = require('react-router-dom');
@@ -299,8 +304,12 @@ const { BrowserRouter } = require('react-router-dom');
       fixed={false}
       links={[
         { href: true, route: 'https://www.decred.org/', text: 'DECRED'},
-        { href: true, route: 'https://blog.decred.org/2017/10/25/Politeia/', text: 'POLITEIA'},
+        { href: true, newTab: true, route: 'https://blog.decred.org/2017/10/25/Politeia/', text: 'POLITEIA'},
       ]}
+      logoLink={{
+        href: true,
+        route: 'https://www.decred.org/',
+      }}
     />
   </div>
 </BrowserRouter>

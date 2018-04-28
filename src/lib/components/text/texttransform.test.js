@@ -42,6 +42,8 @@ describe('TextTransform', () => {
     const secondSpan = wrapper.find('span').at(2);
     expect(secondSpan.hasClass('decred-ui-text-upper')).toBeTruthy();
     expect(secondSpan.text()).toBe('cred');
+    // ensure color is inherited
+    expect(firstSpan.props().style).toHaveProperty('color', 'inherit');
   });
 
   test('Renders with children', () => {
@@ -58,5 +60,11 @@ describe('TextTransform', () => {
     const thirdSpan = wrapper.find('span').at(3);
     expect(thirdSpan.hasClass('decred-ui-text-mixed')).toBeTruthy();
     expect(thirdSpan.text()).toBe('mixed');
+  });
+
+  test('Test uses specified color', () => {
+    const wrapper = shallow(<TextTransform color="#fff" />);
+    const firstSpan = wrapper.find('span').at(1);
+    expect(firstSpan.props().style).toHaveProperty('color', '#fff');
   });
 });
