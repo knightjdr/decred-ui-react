@@ -7,6 +7,10 @@ your React project.
 
 `npm i --save decred-ui-react`
 
+Add the following line to your App.css file (or similar location):
+
+`@import '~decred-ui-react/build/decred-ui-react.css';`
+
 ## Usage
 
 ```
