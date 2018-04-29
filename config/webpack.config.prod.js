@@ -1,5 +1,3 @@
-'use strict';
-
 const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
@@ -31,7 +29,7 @@ if (env.stringified['process.env'].NODE_ENV !== '"production"') {
 }
 
 // Note: defined here because it will be used more than once.
-const cssFilename = 'css/index.css';
+const cssFilename = 'decred-ui-react.css';
 
 // ExtractTextPlugin expects the build output to be flat.
 // (See https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/27)
@@ -39,7 +37,7 @@ const cssFilename = 'css/index.css';
 // To have this structure working with relative paths, we have to use custom options.
 const extractTextPluginOptions = shouldUseRelativeAssetPaths
   ? // Making sure that the publicPath goes back to to build folder.
-    { publicPath: Array(cssFilename.split('/').length).join('../') }
+  { publicPath: Array(cssFilename.split('/').length).join('../') }
   : {};
 
 // This is the production configuration.
@@ -57,7 +55,7 @@ module.exports = {
     // CRL: Updated whole block with library specific info
     path: paths.appBuild,
     filename: 'index.js',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
   },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
@@ -66,7 +64,7 @@ module.exports = {
     // https://github.com/facebookincubator/create-react-app/issues/253
     modules: ['node_modules', paths.appNodeModules].concat(
       // It is guaranteed to exist because we tweak it in `env.js`
-      process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
+      process.env.NODE_PATH.split(path.delimiter).filter(Boolean),
     ),
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common component filename extension to support
@@ -126,7 +124,7 @@ module.exports = {
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: 'media/[name].[ext]',
+              name: 'assets/[name].[ext]',
             },
           },
           // Process JS with Babel.
@@ -137,6 +135,14 @@ module.exports = {
             options: {
 
               compact: true,
+            },
+          },
+          // Process JS with Babel.
+          {
+            test: /\.(ttf|eot|woff|woff2)$/,
+            loader: 'file-loader',
+            options: {
+              name: 'assets/fonts/[name].[ext]',
             },
           },
           // The notation here is somewhat confusing.
@@ -193,8 +199,8 @@ module.exports = {
                     },
                   ],
                 },
-                extractTextPluginOptions
-              )
+                extractTextPluginOptions,
+              ),
             ),
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
           },
@@ -210,7 +216,7 @@ module.exports = {
             // by webpacks internal loaders.
             exclude: [/\.js$/, /\.html$/, /\.json$/],
             options: {
-              name: 'media/[name].[ext]',
+              name: 'assets/[name].[ext]',
             },
           },
           // ** STOP ** Are you adding a new loader?
@@ -259,8 +265,8 @@ module.exports = {
   ],
   // CRL: added externals block for library
   externals: {
-   'react': 'react',
-   'react-dom': 'react-dom'
+    react: 'react',
+    'react-dom': 'react-dom',
   },
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
