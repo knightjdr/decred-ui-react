@@ -5,11 +5,3 @@
 // animations
 @import "lib/animations/pulse";
 @import "lib/animations/wiggle";
-
-// buttons
-button { // remove highlight color on mobile
-  -webkit-tap-highlight-color: transparent;
-}
-button:focus {
-  outline: 0;
-}

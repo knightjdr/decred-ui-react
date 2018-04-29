@@ -5,6 +5,10 @@
   border: none;
   perspective: 1000px;
   perspective-origin: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.decred-ui-flip-panel {
+  outline: 0;
 }
 .decred-ui-flip-panel-container {
   align-items: center;
@@ -23,15 +27,19 @@
 .decred-ui-flip-panel-side {
   padding: 10%;
   position: absolute;
-  transition: opacity 0.01s linear 0.5s;
+  transition: all 0.01s linear 0.5s;
 }
 .decred-ui-flip-panel-back {
   opacity: 0;
-  pointer-events: none;
   transform: scale(-1, 1);
+}
+.decred-ui-flip-panel-back * {
+  pointer-events: none;
 }
 .decred-ui-flip-panel-front {
   opacity: 1;
+}
+.decred-ui-flip-panel-front * {
   pointer-events: auto;
 }
 .decred-ui-flip-panel:hover > .decred-ui-flip-panel-container {
@@ -39,9 +47,13 @@
 }
 .decred-ui-flip-panel:hover .decred-ui-flip-panel-back {
   opacity: 1;
+}
+.decred-ui-flip-panel:hover .decred-ui-flip-panel-back * {
   pointer-events: auto;
 }
 .decred-ui-flip-panel:hover .decred-ui-flip-panel-front {
   opacity: 0;
+}
+.decred-ui-flip-panel:hover .decred-ui-flip-panel-front * {
   pointer-events: none;
 }

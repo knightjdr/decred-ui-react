@@ -40,6 +40,10 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  -webkit-tap-highlight-color: transparent;
+}
+.decred-ui-navbar-menu-backdrop:focus {
+  outline: 0;
 }
 .decred-ui-navbar-menu-bars {
   transition: fill 0.3s linear;
@@ -47,7 +51,11 @@
 .decred-ui-navbar-menu-button {
   background-color: transparent;
   border: none;
-  cursor: pointer;
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+}
+.decred-ui-navbar-menu-button:focus {
+  outline: 0;
 }
 .decred-ui-navbar-menu-container {
   cursor: pointer;
@@ -66,7 +74,7 @@
 .decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu li:hover {
   color: $blueOnTurquoise-focus;
 }
-.decred-ui-navbar-blueOnTurquoise  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $blueOnTurquoise-accent2;
 }
 .decred-ui-navbar-default.decred-ui-navbar-blueOnTurquoise .decred-ui-navbar-menu-bars {
@@ -87,7 +95,7 @@
 .decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu li:hover {
   color: $darkOnTurquoise-focus;
 }
-.decred-ui-navbar-darkOnTurquoise  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $darkOnTurquoise-accent2;
 }
 .decred-ui-navbar-default.decred-ui-navbar-darkOnTurquoise .decred-ui-navbar-menu-bars {
@@ -129,7 +137,7 @@
 .decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu li:hover {
   color: $oneColorPositive-focus;
 }
-.decred-ui-navbar-oneColorPositive  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $oneColorPositive-text;
 }
 .decred-ui-navbar-default.decred-ui-navbar-oneColorPositive .decred-ui-navbar-menu-bars {
@@ -147,7 +155,7 @@
 .decred-ui-navbar-primaryBlue .decred-ui-navbar-menu li:hover {
   color: $primaryBlue-accent2;
 }
-.decred-ui-navbar-primaryBlue  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-primaryBlue .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $primaryBlue-accent2;
 }
 .decred-ui-navbar-default.decred-ui-navbar-primaryBlue .decred-ui-navbar-menu-bars {
@@ -165,7 +173,7 @@
 .decred-ui-navbar-primaryNegative .decred-ui-navbar-menu li:hover {
   color: $primaryNegative-accent1;
 }
-.decred-ui-navbar-primaryNegative  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-primaryNegative .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $primaryNegative-accent2;
 }
 .decred-ui-navbar-default.decred-ui-navbar-primaryNegative .decred-ui-navbar-menu-bars {
@@ -183,7 +191,7 @@
 .decred-ui-navbar-primaryPositive .decred-ui-navbar-menu li:hover {
   color: $primaryPositive-accent1;
 }
-.decred-ui-navbar-primaryPositive  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-primaryPositive .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $primaryPositive-accent2;
 }
 .decred-ui-navbar-default.decred-ui-navbar-primaryPositive .decred-ui-navbar-menu-bars {
@@ -201,7 +209,7 @@
 .decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu li:hover {
   color: $turquoiseOnBlue-focus;
 }
-.decred-ui-navbar-turquoiseOnBlue  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $turquoiseOnBlue-text;
 }
 .decred-ui-navbar-default.decred-ui-navbar-turquoiseOnBlue .decred-ui-navbar-menu-bars {
@@ -222,7 +230,7 @@
 .decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu li:hover {
   color: $whiteOnBlue-focus;
 }
-.decred-ui-navbar-whiteOnBlue  .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
+.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu-button:hover .decred-ui-navbar-menu-bars {
   fill: $whiteOnBlue-primary;
 }
 .decred-ui-navbar-default.decred-ui-navbar-whiteOnBlue .decred-ui-navbar-menu-bars {
