@@ -1,4 +1,5 @@
 # Decred UI React library
+[![npm version](https://badge.fury.io/js/decred-ui-react.svg)](https://badge.fury.io/js/decred-ui-react)
 
 A collection of [Decred](https://decred.org/) themed UI elements for
 your React project.
@@ -9,7 +10,7 @@ your React project.
 
 Add the following line to your App.css file (or similar location):
 
-`@import '~decred-ui-react/build/decred-ui-react.css';`
+`@import '~decred-ui-react/build/decred-ui-react.css'`
 
 ## Usage
 
