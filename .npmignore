@@ -20,5 +20,8 @@ public
 src
 scripts
 config
+styleguide
 .travis.yml
 README.md
+.eslintrc.json
+styleguide.config.js
