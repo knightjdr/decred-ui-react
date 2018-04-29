@@ -38,7 +38,7 @@
   left: 0;
   top: 0;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
 }
 .decred-ui-navbar-menu-bars {
@@ -48,9 +48,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-.decred-ui-navbar-menu-button:focus {
-  outline: 0;
 }
 .decred-ui-navbar-menu-container {
   cursor: pointer;

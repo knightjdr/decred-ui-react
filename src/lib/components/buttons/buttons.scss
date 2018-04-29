@@ -1,9 +1,5 @@
 @import "lib/style/theme";
 
-.decred-ui-button:focus {
-  outline: 0;
-}
-
 .decred-ui-button-blueOnTurquoise {
   background-color: $blueOnTurquoise-primary;
   color: $blueOnTurquoise-text;
