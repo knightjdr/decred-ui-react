@@ -27,7 +27,7 @@
     "url": "https://github.com/knightjdr/decred-ui-react/issues"
   },
   "homepage": "https://knightjdr.github.io/decred-ui-react",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "prop-types": "^15.6.1",
     "react-router-dom": "^4.2.2",
